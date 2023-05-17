@@ -45,7 +45,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
             <Header/>
             <main>
                 <section>
-                    <h2>Update A Course</h2>
+                    <h2>Update A Credential</h2>
                     <span>
                         <form action={`/credential/`} method={"put"}>
                             <fieldset>
