@@ -2,11 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/courses": "pages/courses.js",
-  "/course": "pages/course.js",
-  "/course/edit": "pages/course/edit.js",
-  "/credential": "pages/credential.js",
-  "/credentials": "pages/credentials.js",
-  "/credential/edit": "pages/credential/edit.js",
-  "/credential/delete": "pages/credential/delete.js"
+  "/projects": "pages/projects.js",
+  "/plan": "pages/plan.js"
 }

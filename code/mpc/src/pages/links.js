@@ -14,10 +14,10 @@ function Links(){
                     <h3>Blog</h3>
                     {blogLinks.map((link, blog) => {
                         return (
-                            <ul>
+                            <ul key={blog}>
                                 <li style={{listStyleType: "none"}}>
                                     <Link href={link.path} target={"_blank"}>
-                                        <div key={blog}>{link.name}</div>
+                                        <div>{link.name}</div>
                                     </Link>
                                 </li>
                             </ul>
@@ -26,10 +26,10 @@ function Links(){
                     <h3>MERN</h3>
                     {mernLinks.map((link, mern) => {
                         return (
-                            <ul>
+                            <ul key={mern}>
                                 <li style={{listStyleType: "none"}}>
                                     <Link href={link.path} target={"_blank"}>
-                                        <div key={mern}>{link.name}</div>
+                                        <div>{link.name}</div>
                                     </Link>
                                 </li>
                             </ul>
@@ -38,10 +38,10 @@ function Links(){
                     <h3>Development</h3>
                     {devLinks.map((link, dev) => {
                         return (
-                            <ul>
+                            <ul key={dev}>
                                 <li style={{listStyleType: "none"}}>
                                     <Link href={link.path} target={"_blank"}>
-                                        <div key={dev}>{link.name}</div>
+                                        <div>{link.name}</div>
                                     </Link>
                                 </li>
                             </ul>

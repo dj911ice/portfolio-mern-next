@@ -11,10 +11,10 @@ function Header() {
                     <nav>
                         {navLinks.map((link, navigation) => {
                             return (
-                                <ul>
+                                <ul key={navigation}>
                                     <li>
                                         <Link href={link.path}>
-                                            <div key={navigation}>{link.name}</div>
+                                            <div >{link.name}</div>
                                         </Link>
                                     </li>
                                 </ul>

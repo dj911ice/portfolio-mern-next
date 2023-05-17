@@ -15,9 +15,9 @@ function Plan() {
                         The focus of this project is to create a brand new redesigned professional website/web
                         application utilizing the Mongo, Express, React, and Node (MERN) tech stack. This new site will
                         also have a link to the portfolio site created in CS 290 Web Development. Inspiration for the
-                        project comes from the following website: <Link href={"http://www.justinpdickerson.com"}
-                                                                        target={"_blank"}
-                                                                        rel={"noreferrer"}>www.justinpdickerson.com</Link>,
+                        project comes from the following website: <Link href="http://www.justinpdickerson.com"
+                                                                        target="_blank"
+                                                                        rel="noreferrer">www.justinpdickerson.com</Link>,
                         where it was written only
                         using the Hyper Text Markup Language (HTML), Cascading Style Sheets (CSS) and JavaScript (JS)
                         along with the Bootstrap CSS/JS framework & jQuery a JavaScript library. After five years, it is

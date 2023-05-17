@@ -25,40 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/course": [
+    "/plan": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/course.js"
+      "static/chunks/pages/plan.js"
     ],
-    "/course/edit": [
+    "/projects": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/course/edit.js"
-    ],
-    "/courses": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/courses.js"
-    ],
-    "/credential": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/credential.js"
-    ],
-    "/credential/delete": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/credential/delete.js"
-    ],
-    "/credential/edit": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/credential/edit.js"
-    ],
-    "/credentials": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/credentials.js"
+      "static/chunks/pages/projects.js"
     ]
   },
   "ampFirstPages": []
