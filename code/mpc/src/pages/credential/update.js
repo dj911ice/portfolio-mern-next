@@ -83,12 +83,12 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                                        onChange={e => setCredentialCertifier(e.target.value)}/>
                                 </label>
 
-                                <label htmlFor={"credentialCompleted"}>Status:
-                                <input type={"text"} id={"credentialCompleted"} name={"credentialCompleted"}
-                                       value={credentialCompleted}
-                                       aria-setsize={7} maxLength={7} required={true} autoFocus={false}
-                                       onChange={e => setCredentialCompleted(e.target.value)}/>
-                                </label>
+                                {/*<label htmlFor={"credentialCompleted"}>Status:*/}
+                                {/*<input type={"text"} id={"credentialCompleted"} name={"credentialCompleted"}*/}
+                                {/*       value={credentialCompleted}*/}
+                                {/*       aria-setsize={7} maxLength={7} required={true} autoFocus={false}*/}
+                                {/*       onChange={e => setCredentialCompleted(e.target.value)}/>*/}
+                                {/*</label>*/}
                                 <p>
                                     <button type={"submit"}
                                             aria-disabled={false}
