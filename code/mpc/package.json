@@ -1,0 +1,25 @@
+{
+  "name": "mpc",
+  "version": "0.1.0",
+  "description": "professional frontend via Next.js",
+  "private": true,
+  "scripts": {
+    "frontend": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.38.0",
+    "eslint-config-next": "13.3.0",
+    "http-proxy": "^1.18.1",
+    "next": "13.3.0",
+    "next-auth": "^4.22.1",
+    "next-usequerystate": "^1.7.2",
+    "nodemon": "^2.0.20",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-image-gallery": "^1.2.11"
+  }
+}

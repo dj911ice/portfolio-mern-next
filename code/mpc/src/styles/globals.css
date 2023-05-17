@@ -1,0 +1,655 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+/*   ----- Imports  -----  */
+/*Add fonts from the app's server*/
+/*  @font-face {*/
+/*    font-family: 'FontName';*/
+/*    src: url('FontName.woff2') format('woff2');*/
+/*  }*/
+/*...or hosted services like Google Fonts*/
+/*@import url(//fonts.googleapis.com/css?family=Font+Name);*/
+@import url('//fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Handlee&display=swap');
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+/* npm install modern-normalize
+  Resets elements for browser consistency.
+  https://www.npmjs.com/package/modern-normalize
+*/
+
+/*Component-specific stylesheets, if any.*/
+/*  @import "component1.css";*/
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+/*   ----- Variables  -----  */
+:root {
+  /*--custom-color-name: "my-color";*/
+  /*--custom-embellishment-name: none;*/
+  --color-body-text: #59524C;
+  --color-heading-text: #261E17;
+  --color-sub-heading-text: #261E17;
+  --color-nav-buttons: #BF946F;
+  --color-sub-nav-buttons: #7a2132;
+  --color-nav-a: #261E17;
+  --color-text: #1a1510;
+  --color-background-body: #424E59;
+  --color-background-main: rgba(193, 208, 217, 0.78);
+  --color-background-header: rgba(193, 208, 217, 0.88);
+  --color-background-footer: rgba(193, 208, 217, 0.88);
+  --color-background-code: rgba(187, 182, 185, 0.94);
+  --color-background-table: rgba(163, 179, 197, 0.96);
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body { /* Can alternatively define in html {} or :root {} */
+  background-attachment: fixed;
+  /*background-color:var(--color-background-body);*/
+  background-image: url("../images/mbsc_beach_resized_compressed.jpg");
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--color-body-text);
+  font-family: 'Cormorant', serif; /* Define with at least one font name and its related generic family name.*/
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 2%;
+  min-width: 700px;
+  max-width: 1300px;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  /*background-color: var(--color-background-header);*/
+  color: var(--color-heading-text);
+  margin: 0;
+  padding: 0 0 1%;
+  /*text-align: center;*/
+  max-width: 100%;
+  line-height: 1px;
+}
+header h2 {
+  float: left;
+}
+main {
+  background-color: var(--color-background-main);
+  padding: 3%;
+}
+
+section {
+}
+
+article {
+}
+
+#topic1 {
+}
+
+#topic2 {
+}
+
+div {
+}
+
+aside {
+}
+
+footer {
+  position: sticky;
+  background-color: var(--color-background-footer);
+}
+
+footer p {
+  padding-left: 1%;
+}
+
+/* ----- Anchors ----- Text links */
+a {
+  color: var(--color-heading-text);
+  font-weight: normal;
+  text-decoration: none;
+
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+a:active {
+}
+
+a:visited {
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 1% auto;
+  line-height: 1%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1%;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+}
+
+
+nav a {
+  /*background: var(--color-nav-buttons);*/
+  color: var(--color-nav-a);
+  /*border: 3px solid #260B01;*/
+  /*margin: 0 1% 0 1%;*/
+  line-height: 1%;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.sub-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: sticky;
+  text-align: center;
+  margin: 3% auto;
+  padding: 2%;
+}
+
+.sub-nav a {
+}
+
+.sub-nav a:hover {
+}
+
+/*  -----  Typography  ----- */
+p {
+  color: var(--color-text);
+}
+
+br {
+}
+
+ol, ul, dl {
+}
+
+li {
+}
+
+dt {
+  color: #260B01;
+}
+
+dd {
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Handlee', cursive; /* Define with at least one font name and its related generic family name.*/
+}
+
+h1 {
+}
+
+h2 {
+  color: var(--color-sub-heading-text);
+  text-align: center;
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+abbr {
+}
+
+acronym {
+}
+
+address {
+}
+
+blockquote {
+}
+
+q {
+}
+
+cite {
+}
+
+em {
+}
+
+hr {
+}
+
+mark {
+}
+
+s {
+}
+
+span {
+}
+
+strong {
+}
+
+sub {
+}
+
+sup {
+}
+
+time {
+}
+
+i {
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+/*  ----- Coding or instructional typography ----- */
+pre {
+}
+
+code {
+  background-color: var(--color-background-code);
+}
+
+kbd {
+}
+
+samp {
+}
+
+var {
+}
+
+del {
+}
+
+ins {
+}
+
+
+/*  ----- Table ----- */
+table {
+  border: solid 2px rgba(37, 70, 91, 0.88);
+  border-collapse: collapse;
+  background-color: var(--color-background-table);
+  table-layout: fixed;
+  margin: 1%;
+  padding: 1%;
+  font-size: 93%;
+  width: 90%;
+  font-family: sans-serif;
+}
+
+caption {
+  font-size: inherit;
+  font-family: inherit;
+  text-align: center;
+}
+
+thead {
+}
+
+tbody {
+}
+
+tfoot {
+}
+
+tr {
+  border: solid 3px rgba(37, 70, 91, 0.88);
+  margin: 1%;
+  padding: 1%;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(199, 207, 215, 0.96);
+}
+
+tr:nth-child(odd) {
+}
+
+th {
+  border: solid 3px rgba(37, 70, 91, 0.88);
+  margin: 1%;
+  padding: 1%;
+}
+
+td {
+  border: solid 3px rgba(37, 70, 91, 0.88);
+  margin: 1%;
+  text-align: center;
+}
+
+td:nth-child(1) {
+}
+
+colgroup {
+}
+
+data {
+}
+
+datalist {
+}
+
+/*  ----- Form ----- */
+form {
+
+}
+
+fieldset {
+  border: 2px solid darkslategrey;
+  margin-top: 1%;
+  padding: 1%;
+}
+
+legend {
+  color: #16225e;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 2%;
+}
+
+label {
+  display: block;
+  margin-top: 2%;
+  min-width: 90%;
+}
+
+input, button, textarea, select {
+  font-size: 100%;
+  padding: 1%;
+  margin: 1%;
+  font-family: inherit;
+}
+
+input, #country, #city, #date, #visits {
+  max-width: 80%;
+  padding: 1%;
+  margin: 1%;
+  font-family: inherit;
+  text-align: center;
+}
+
+select, #purpose {
+  max-width: 90%;
+  padding: 1%;
+  margin: 1%;
+  font-family: inherit;
+  text-align: center;
+}
+
+button {
+  background-color: rgba(143, 180, 193, 0.85);
+  font-weight: bold;
+}
+
+#add {
+  background-color: rgba(143, 180, 193, 0.85);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+#edit {
+  background-color: rgba(143, 180, 193, 0.85);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+input:invalid {
+  border: 3px solid red;
+}
+
+input:valid {
+  border: 3px solid green;
+}
+
+output {
+}
+
+meter {
+}
+
+progress {
+}
+
+select {
+}
+
+optgroup {
+}
+
+option {
+}
+
+textarea {
+}
+
+*:required {
+  background-color: #dcd5cf;
+}
+
+:focus {
+  background-color: rgba(117, 172, 208, 0.88);
+}
+
+*::placeholder {
+  color: var(--color-text);
+}
+
+label.required:after {
+  content: " *";
+  color: red;
+}
+
+select {
+  background-color: #bbb7b8;
+}
+
+.entity {
+  display: inline-block;
+}
+
+.preferences {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+#callApiButtons {
+  text-align: center;
+}
+
+#callApiButtons p {
+  font-size: 1.25em;
+}
+
+#linkedin {
+  text-decoration: none;
+}
+
+#tech {
+  font-size: 2.25em;
+}
+
+#location {
+  max-width: 25%;
+}
+
+#plus, #minus, #qty {
+  font-size: 1.15em;
+  line-height: 1px;
+}
+
+/* ----- Media ----- */
+figure {
+}
+
+figcaption {
+}
+
+figure img {
+}
+
+svg {
+}
+
+picture {
+}
+
+source {
+}
+
+iframe {
+}
+
+video {
+}
+
+audio {
+}
+
+embed {
+}
+
+object {
+}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {
+}
+
+.floatleft {
+}
+
+.center-middle {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ihover:hover {
+  cursor: pointer;
+}
+
+.ten {
+}
+
+.twenty {
+}
+
+.thirty {
+}
+
+.forty {
+}
+
+.fifty {
+}
+
+.sixty {
+}
+
+.seventy {
+}
+
+.eighty {
+}
+
+.radius {
+}
+
+.circle {
+}
+
+.boxshadow {
+}
+
+.tshadow {
+}
+
+.gradient {
+}
+
+.shape {
+}
+
+@keyframes App-logo {
+}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {
+}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {
+}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {
+}
+
+
+/*.App {*/
+/*  text-align: center;*/
+/*}*/
+
+/*.App-logo {*/
+/*  height: 40vmin;*/
+/*  pointer-events: none;*/
+/*}*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/*.App-header {*/
+/*  background-color: #282c34;*/
+/*  min-height: 100vh;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  font-size: calc(10px + 2vmin);*/
+/*  color: white;*/
+/*}*/
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,8 @@
+/code/mpc/.env
+/code/mpc/backend/.env
+/code/mpc/backend/courses.http
+/code/mpc/backend/credentials.http
+/code/mpc/node_modules/
+/code/mpc/backend/node_modules/
+/code/mpc/documented-issue.docx
+/code/mpc/.next/
