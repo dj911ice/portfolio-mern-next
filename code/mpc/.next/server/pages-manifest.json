@@ -1,7 +1,26 @@
 {
   "/_app": "pages/_app.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/projects": "pages/projects.js",
-  "/plan": "pages/plan.js"
+  "/api/hello": "pages/api/hello.js",
+  "/contact": "pages/contact.html",
+  "/course/add": "pages/course/add.html",
+  "/course/delete": "pages/course/delete.html",
+  "/course/edit": "pages/course/edit.html",
+  "/course": "pages/course.html",
+  "/courses": "pages/courses.html",
+  "/credential/add": "pages/credential/add.html",
+  "/credential/delete": "pages/credential/delete.html",
+  "/credential/edit": "pages/credential/edit.html",
+  "/credential": "pages/credential.html",
+  "/credentials": "pages/credentials.html",
+  "/experience": "pages/experience.html",
+  "/": "pages/index.html",
+  "/links": "pages/links.html",
+  "/plan": "pages/plan.html",
+  "/projects": "pages/projects.html",
+  "/course/update": "pages/course/update.js",
+  "/credential/update": "pages/credential/update.js",
+  "/404": "pages/404.html"
 }
