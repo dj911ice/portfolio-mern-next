@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "professional frontend via Next.js",
   "private": true,
+  "engines": {
+    "node": "14.18.0 || >=16.0.0"
+  },
   "scripts": {
     "frontend": "next dev",
     "build": "next build",
