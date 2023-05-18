@@ -19,7 +19,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
     // const [conferralDate, setConferralDate] = useState(cConferral);
 
     const modifyCredential = async () => {
-        const response = await fetch(`/api/courses/${id}`, {
+        const response = await fetch(`/api/credentials/${id}`, {
             method: 'put',
             body: JSON.stringify({
                 credentialType: credentialType,
@@ -47,7 +47,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                 <section>
                     <h2>Update A Credential</h2>
                     <span>
-                        <form action={`/credential/`} method={"put"}>
+                        <form action={`/credential`} method={"put"}>
                             <fieldset>
                                 <legend>Credential Update Form</legend>
                                 <label htmlFor={"credentialType"}>Type:
