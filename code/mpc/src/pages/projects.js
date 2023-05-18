@@ -8,40 +8,40 @@ const projects = [
         thumbnail: '/images/mytestappjpd-sm.png',
         embedUrl: 'https://youtu.be/PQXwOXdSj9U',
         description: 'Dance Products',
-        originalWidth: '1280px',
-        originalHeight: '800px'
+        originalWidth: '1024px',
+        originalHeight: '640px'
     },
 
     {
         description: 'Fizz Buzz Interactive (Ruby)',
         original: '/images/fbi_ruby.png',
         thumbnail: '/images/fbi_ruby.png',
-        originalWidth: '1280px',
-        originalHeight: '800px'
+        originalWidth: '1024px',
+        originalHeight: '640px'
     },
 
     {
         description: 'Habitica Abroad',
         original: '/images/HabiticaAbroad_dashboad.PNG',
         thumbnail: '/images/HabiticaAbroad_dashboad.PNG',
-        originalWidth: '1280px',
-        originalHeight: '800px'
+        originalWidth: '1024px',
+        originalHeight: '640px'
     },
 
     {
         description: 'Grand Circus Library',
         original: '/images/GCLibrary_sc.PNG',
         thumbnail: '/images/GCLibrary_sc.PNG',
-        originalWidth: '1280px',
-        originalHeight: '800px'
+        originalWidth: '1024px',
+        originalHeight: '640px'
     },
 
     {
         description: 'JD Music Player',
         original: '/images/exoplayer_audio.png',
         thumbnail: '/images/exoplayer_audio.png',
-        originalWidth: '1080px',
-        originalHeight: '2160px'
+        originalWidth: '600px',
+        originalHeight: '1200px'
     }
 ]
 

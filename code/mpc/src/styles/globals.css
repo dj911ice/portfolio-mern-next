@@ -95,6 +95,7 @@ aside {
 footer {
   position: sticky;
   background-color: var(--color-background-footer);
+  font-size: 90%;
 }
 
 footer p {
@@ -302,7 +303,7 @@ table {
   table-layout: fixed;
   margin: 1%;
   padding: 1%;
-  font-size: 93%;
+  font-size: 90%;
   width: 90%;
   font-family: sans-serif;
 }
@@ -344,7 +345,10 @@ th {
 td {
   border: solid 3px rgba(37, 70, 91, 0.88);
   margin: 1%;
+  padding: 1%;
   text-align: center;
+  font-size: 87%;
+
 }
 
 td:nth-child(1) {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import {mernLinks} from "@/utils/mernLinks";
 import {devLinks} from "@/utils/devLinks";
 import {blogLinks} from "@/utils/blogLinks";
+import {depLinks} from "@/utils/depLinks";
 function Links(){
     return (
         <>
@@ -16,9 +17,11 @@ function Links(){
                         return (
                             <ul key={blog}>
                                 <li style={{listStyleType: "none"}}>
-                                    <Link href={link.path} target={"_blank"}>
-                                        <div>{link.name}</div>
-                                    </Link>
+                                    <p>
+                                        <Link href={link.path} target={"_blank"}>
+                                            {link.name}
+                                        </Link>: {link.description}
+                                    </p>
                                 </li>
                             </ul>
                         )
@@ -28,9 +31,11 @@ function Links(){
                         return (
                             <ul key={mern}>
                                 <li style={{listStyleType: "none"}}>
-                                    <Link href={link.path} target={"_blank"}>
-                                        <div>{link.name}</div>
-                                    </Link>
+                                    <p>
+                                        <Link href={link.path} target={"_blank"}>
+                                            {link.name}
+                                        </Link>: {link.description}
+                                    </p>
                                 </li>
                             </ul>
                         )
@@ -40,9 +45,25 @@ function Links(){
                         return (
                             <ul key={dev}>
                                 <li style={{listStyleType: "none"}}>
-                                    <Link href={link.path} target={"_blank"}>
-                                        <div>{link.name}</div>
-                                    </Link>
+                                    <p>
+                                        <Link href={link.path} target={"_blank"}>
+                                            {link.name}
+                                        </Link>: {link.description}
+                                    </p>
+                                </li>
+                            </ul>
+                        )
+                    })}
+                    <h3>Deployment</h3>
+                    {depLinks.map((link, dep) => {
+                        return (
+                            <ul key={dep}>
+                                <li style={{listStyleType: "none"}}>
+                                    <p>
+                                        <Link href={link.path} target={"_blank"}>
+                                            {link.name}
+                                        </Link>: {link.description}
+                                    </p>
                                 </li>
                             </ul>
                         )
