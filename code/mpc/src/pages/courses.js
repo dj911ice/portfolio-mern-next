@@ -28,7 +28,8 @@ function Courses(){
             <Header/>
             <main>
                 <section>
-                    <button onClick={courseAdmin}>Course Admin</button>
+                    <button onClick={courseAdmin}>Courses Admin</button>
+                    <button onClick={retrieveCourses}>Fetch Courses</button>
                     <h2>Courses Taken</h2>
                     <span>Table of Courses</span>
                     <CoursesTable

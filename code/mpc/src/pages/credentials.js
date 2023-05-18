@@ -26,7 +26,8 @@ function Credentials({}){
             <Header/>
             <main>
                 <section>
-                    <button onClick={credentialAdmin}>Credential Admin</button>
+                    <button onClick={credentialAdmin}>Credentials Admin</button>
+                    <button onClick={retrieveCredentials}>Fetch Credentials</button>
                     <h2>My Credentials</h2>
                     <span>Table of Credentials</span>
                     <CredentialsTable
