@@ -19,13 +19,15 @@ export default function Home() {
                     <h2>Professional Site</h2>
                     <h3>Introduction</h3>
                     <p>
-                        Greetings! My name is Justin a freelance software
+                        Greetings! My name is Justin Dickerson a freelance software
                         engineer within the mobile & web development space. Additionally, a student at Oregon State
                         University for their post-baccalaureate curriculum in Computer
                         Science via Ecampus. Interested in hiring or booking me? Download my resume via a computer and
                         then send me an email along with a description of the job or project requirements.
                         I will gladly review and reach out if the project is potential fit. Have a wonderful day!
                     </p>
+                    {/*<button onClick={"/resume/JPDSWEResume_050823.docx"}>Resume DOCX</button>*/}
+                    {/*<button onClick={"/resume/JPDSWEResume_050823.pdf"}>Resume PDF</button>*/}
                     <h3>About</h3>
                     <p>
                         Welcome to the redesign of my professional site. The website utilizes Next.js within the MERN

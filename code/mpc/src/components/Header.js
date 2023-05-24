@@ -7,7 +7,8 @@ function Header() {
         <>
             <header>
                 <span>
-                    <span>LinkedIn & Github Icons</span>
+                    <Link href={"https://www.linkedin.com/in/justinpdickerson/"} target={"_blank"}>LinkedIn</Link>
+                    <Link href={"https://github.com/dj911ice"} target={"_blank"}> Github</Link>
                     <nav>
                         {navLinks.map((link, navigation) => {
                             return (
