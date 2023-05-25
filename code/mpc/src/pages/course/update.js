@@ -44,13 +44,13 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
                 <section>
                     <h2>Update A Course</h2>
                     <span>
-                        <form action={`/course/`} method={"put"}>
+                        <form action={`/courses`} method={"put"}>
                             <fieldset>
                                 <legend>Course Update Form</legend>
                                 <label htmlFor={"courseIdentifier"}>Course Identifier:
                                 <input type={"text"} id={"courseIdentifier"} name={"courseIdentifier"}
                                        value={courseIdentifier}
-                                       aria-setsize={10} maxLength={10} required={true}
+                                       aria-setsize={15} maxLength={15} required={true}
                                        placeholder={"CS XXX"} autoFocus={true}
                                        onChange={e => setCourseIdentifier(e.target.value)}/>
                                 </label>
@@ -58,7 +58,7 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
                                 <label htmlFor={"courseName"}>Course Name:
                                 <input type={"text"} id={"courseName"} name={"courseName"}
                                        value={courseName}
-                                       aria-setsize={15} maxLength={15} required={true}
+                                       aria-setsize={25} maxLength={25} required={true}
                                        placeholder={"Web Development"} autoFocus={false}
                                        onChange={e => setCourseName(e.target.value)}/>
                                 </label>
@@ -75,7 +75,7 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
                                 <label htmlFor={"courseIssuer"}>Issuing Authority:
                                 <input type={"text"} id={"courseIssuer"} name={"courseIssuer"}
                                        value={courseIssuer}
-                                       aria-setsize={15} maxLength={15} required={true}
+                                       aria-setsize={50} maxLength={50} required={true}
                                        placeholder={"University of CompSci"} autoFocus={false}
                                        onChange={e => setCourseIssuer(e.target.value)}/>
                                 </label>

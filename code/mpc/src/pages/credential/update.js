@@ -47,13 +47,13 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                 <section>
                     <h2>Update A Credential</h2>
                     <span>
-                        <form action={`/credential`} method={"put"}>
+                        <form action={`/credentials`} method={"put"}>
                             <fieldset>
                                 <legend>Credential Update Form</legend>
                                 <label htmlFor={"credentialType"}>Type:
                                 <input type={"text"} id={"credentialType"} name={"credentialType"}
                                        value={credentialType}
-                                       aria-setsize={10} maxLength={10} required={true}
+                                       aria-setsize={15} maxLength={25} required={true}
                                        placeholder={"Degree"} autoFocus={true}
                                        onChange={e => setCredentialType(e.target.value)}/>
                                 </label>
@@ -61,7 +61,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                                 <label htmlFor={"credentialLevel"}>Level:
                                 <input type={"text"} id={"credentialLevel"} name={"credentialLevel"}
                                        value={credentialLevel}
-                                       aria-setsize={15} maxLength={15} required={true}
+                                       aria-setsize={15} maxLength={25} required={true}
                                        placeholder={"Unknown"} autoFocus={false}
                                        onChange={e => setCredentialLevel(e.target.value)}/>
                                 </label>
@@ -78,7 +78,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                                 <label htmlFor={"credentialCertifier"}>Certifier:
                                 <input type={"text"} id={"credentialCertifier"} name={"credentialCertifier"}
                                        value={credentialCertifier}
-                                       aria-setsize={15} maxLength={15} required={true}
+                                       aria-setsize={50} maxLength={50} required={true}
                                        placeholder={"University of CompSci"} autoFocus={false}
                                        onChange={e => setCredentialCertifier(e.target.value)}/>
                                 </label>

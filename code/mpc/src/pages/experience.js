@@ -11,7 +11,7 @@ function Experience(){
                     <h2>My Experience</h2>
                     <p>Professional Software Engineering Experience:</p>
                     <ul>
-                        <li>Ruby Developer at Prota Studios</li>
+                        <li>Ruby Developer at Prota Ventures</li>
                         <li>Android Engineer as a independent consultant</li>
                         <li>Senior Android Developer at a top fortune 100 company</li>
                         <li>Android Developer at the Mobile Apps Company</li>

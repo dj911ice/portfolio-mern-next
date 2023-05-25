@@ -9,7 +9,7 @@
 /*  }*/
 /*...or hosted services like Google Fonts*/
 /*@import url(//fonts.googleapis.com/css?family=Font+Name);*/
-@import url(//fonts.googleapis.com/css2?family=Bellefair&display=swap);
+@import url('//fonts.googleapis.com/css2?family=Bellefair&display=swap');
 /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 /* npm install modern-normalize
   Resets elements for browser consistency.
@@ -198,7 +198,7 @@ dd {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Handlee', cursive; /* Define with at least one font name and its related generic family name.*/
+  font-family: 'sans-serif'; /* Define with at least one font name and its related generic family name.*/
 }
 
 h1 {
@@ -395,15 +395,15 @@ input, button, textarea, select {
   font-family: inherit;
 }
 
-input, #country, #city, #date, #visits {
-  max-width: 80%;
+input {
+  max-width: 90%;
   padding: 1%;
   margin: 1%;
   font-family: inherit;
   text-align: center;
 }
 
-select, #purpose {
+select {
   max-width: 90%;
   padding: 1%;
   margin: 1%;
@@ -487,14 +487,6 @@ select {
   font-weight: bold;
 }
 
-#callApiButtons {
-  text-align: center;
-}
-
-#callApiButtons p {
-  font-size: 1.25em;
-}
-
 #linkedin {
   text-decoration: none;
 }
@@ -505,11 +497,6 @@ select {
 
 #location {
   max-width: 25%;
-}
-
-#plus, #minus, #qty {
-  font-size: 1.15em;
-  line-height: 1px;
 }
 
 /* ----- Media ----- */
@@ -647,7 +634,7 @@ object {
 /*}*/
 
 .App-link {
-  color: #61dafb;
+  color: #4c8da0;
 }
 
 @keyframes App-logo-spin {
