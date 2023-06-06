@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
-import {retrieveCredentials} from "/../../backend/model.mjs";
+import {retrieveCredentials} from "../../../backend/model.mjs";
 
 
 export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus} /*{credential}*/) => {
