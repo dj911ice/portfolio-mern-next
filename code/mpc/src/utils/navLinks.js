@@ -19,10 +19,10 @@ export const navLinks = [
         name: "Credentials",
         path: "/credentials"
     },
-    {
-        name: "Contact",
-        path: "/contact"
-    },
+    // {
+    //     name: "Contact",
+    //     path: "/contact"
+    // },
     {
         name: "Links",
         path: "/links"
