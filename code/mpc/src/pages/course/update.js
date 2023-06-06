@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
-import {retrieveCourses} from "../../../backend/model.mjs";
 
 
 export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{course}*/) => {
@@ -39,9 +38,9 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
         }
     };
 
-    useEffect(() => {
-        retrieveCourses();
-    }, []);
+    // useEffect(() => {
+    //     retrieveCourses();
+    // }, []);
 
     return (
         <>

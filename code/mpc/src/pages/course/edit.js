@@ -31,9 +31,9 @@ function EditCourses({setCourse}) {
         });
     }
 
-    useEffect(() => {
-        retrieveCourses();
-    }, []);
+    // useEffect(() => {
+    //     retrieveCourses();
+    // }, []);
 
     return (
         <>

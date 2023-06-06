@@ -26,9 +26,9 @@ function DeleteCredentials() {
         }
     }
 
-    useEffect(() => {
-        retrieveCredentials();
-    }, []);
+    // useEffect(() => {
+    //     retrieveCredentials();
+    // }, []);
 
     return (
         <>

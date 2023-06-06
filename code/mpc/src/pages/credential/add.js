@@ -27,9 +27,9 @@ export const AddNewCredential = () => {
         }
     }
 
-    useEffect(() => {
-        retrieveCredentials();
-    }, []);
+    // useEffect(() => {
+    //     retrieveCredentials();
+    // }, []);
 
     return (
         <>
