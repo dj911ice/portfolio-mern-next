@@ -33,9 +33,9 @@ function EditCredentials({setCredential}) {
         });
     }
 
-    // useEffect(() => {
-    //     retrieveCredentials();
-    // }, []);
+    useEffect(() => {
+        retrieveCredentials();
+    }, []);
 
     return (
         <>

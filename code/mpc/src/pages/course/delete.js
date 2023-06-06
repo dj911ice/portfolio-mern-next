@@ -26,9 +26,9 @@ function DeleteCourses() {
         }
     }
 
-    // useEffect(() => {
-    //     retrieveCourses();
-    // }, []);
+    useEffect(() => {
+        retrieveCourses();
+    }, []);
 
     return (
         <>
