@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
+import {retrieveCourses} from "../../../backend/model.mjs";
 
 export const AddNewCourse = () => {
     const [courseIdentifier, setCourseIdentifier] = useState('');
@@ -24,6 +25,11 @@ export const AddNewCourse = () => {
             alert(`Unsuccessful operation, the course was not added! \n status ${response.status}`);
         }
     }
+
+    useEffect(() => {
+        retrieveCourses();
+    }, []);
+
     return (
         <>
             <Header/>

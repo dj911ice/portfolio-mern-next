@@ -339,7 +339,7 @@ tr:nth-child(odd) {
 th {
   border: solid 3px rgba(37, 70, 91, 0.88);
   margin: 1%;
-  padding: 1%;
+  /*padding: 1%;*/
 }
 
 td {
@@ -486,11 +486,9 @@ select {
   font-size: inherit;
   font-weight: bold;
 }
-
-#linkedin {
-  text-decoration: none;
+#myName {
+  font-size: 1.5em;
 }
-
 #tech {
   font-size: 2.25em;
 }
@@ -499,6 +497,9 @@ select {
   max-width: 25%;
 }
 
+#linkedin, #github {
+  font-size: 1.25em;
+}
 /* ----- Media ----- */
 figure {
 }

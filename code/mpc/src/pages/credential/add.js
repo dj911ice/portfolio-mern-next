@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
+import {retrieveCredentials} from "../../../backend/model.mjs";
 
 export const AddNewCredential = () => {
     const [credentialType, setCredentialType] = useState('');
@@ -26,6 +27,11 @@ export const AddNewCredential = () => {
             alert(`Unsuccessful operation, the credential was not added! \n status ${response.status}`);
         }
     }
+
+    useEffect(() => {
+        retrieveCredentials();
+    }, []);
+
     return (
         <>
             <Header/>

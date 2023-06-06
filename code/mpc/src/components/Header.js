@@ -1,14 +1,23 @@
 import React from "react";
 import Link from "next/link"
 import {navLinks} from "@/utils/navLinks";
+import {FaLinkedin, FaGithub} from 'react-icons/fa';
 
 function Header() {
     return (
         <>
             <header>
                 <span>
-                    <Link href={"https://www.linkedin.com/in/justinpdickerson/"} target={"_blank"}>LinkedIn</Link>
-                    <Link href={"https://github.com/dj911ice"} target={"_blank"}> Github</Link>
+                    <div>
+                        <p id={"myName"}>Justin P. Dickerson</p>
+                        {/*<button onClick={"/resume/JPDSWEResume_050823.docx"}>Resume DOCX</button>*/}
+                        {/*<button onClick={"/resume/JPDSWEResume_050823.pdf"}>Resume PDF</button>*/}
+                        <Link href={"https://www.linkedin.com/in/justinpdickerson/"}
+                              target={"_blank"}><FaLinkedin id={"linkedin"}></FaLinkedin></Link>
+                        <span> </span>
+                        <Link href={"https://github.com/dj911ice"}
+                              target={"_blank"}> <FaGithub id={"github"}></FaGithub></Link>
+                    </div>
                     <nav>
                         {navLinks.map((link, navigation) => {
                             return (

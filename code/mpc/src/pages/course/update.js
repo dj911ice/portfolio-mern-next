@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
+import {retrieveCourses} from "../../../backend/model.mjs";
 
 
 export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{course}*/) => {
@@ -37,6 +38,11 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
             alert(`Unsuccessful operation, the course was not updated! \n status ${response.status}. ${errMsg.Error}`);
         }
     };
+
+    useEffect(() => {
+        retrieveCourses();
+    }, []);
+
     return (
         <>
             <Header/>

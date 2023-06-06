@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
+import {retrieveCredentials} from "../../../backend/model.mjs";
 
 
 export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus} /*{credential}*/) => {
@@ -40,6 +41,11 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
             alert(`Unsuccessful operation, the credential was not updated! \n status ${response.status}. ${errMsg.Error}`);
         }
     };
+
+    useEffect(() => {
+        retrieveCredentials();
+    }, []);
+
     return (
         <>
             <Header/>
