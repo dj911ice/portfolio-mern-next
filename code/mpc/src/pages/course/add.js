@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
-import {retrieveCourses} from "../../../backend/model.mjs";
 
 export const AddNewCourse = () => {
     const [courseIdentifier, setCourseIdentifier] = useState('');
@@ -26,9 +25,9 @@ export const AddNewCourse = () => {
         }
     }
 
-    useEffect(() => {
-        retrieveCourses();
-    }, []);
+    // useEffect(() => {
+    //     retrieveCourses();
+    // }, []);
 
     return (
         <>

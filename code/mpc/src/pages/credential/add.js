@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
-import {retrieveCredentials} from "../../../backend/model.mjs";
 
 export const AddNewCredential = () => {
     const [credentialType, setCredentialType] = useState('');
