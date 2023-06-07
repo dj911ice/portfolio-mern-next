@@ -10,11 +10,10 @@ function Header() {
                 <span>
                     <div>
                         <p id={"myName"}>Justin P. Dickerson</p>
-                        {/*<button onClick={"/resume/JPDSWEResume_050823.docx"}>Resume DOCX</button>*/}
-                        {/*<button onClick={"/resume/JPDSWEResume_050823.pdf"}>Resume PDF</button>*/}
                         <Link href={"https://www.linkedin.com/in/justinpdickerson/"}
                               target={"_blank"}><FaLinkedin id={"linkedin"}></FaLinkedin></Link>
                         <span> </span>
+
                         <Link href={"https://github.com/dj911ice"}
                               target={"_blank"}> <FaGithub id={"github"}></FaGithub></Link>
                     </div>

@@ -486,6 +486,11 @@ select {
   font-size: inherit;
   font-weight: bold;
 }
+
+.resume {
+  align-content: center;
+}
+
 #myName {
   font-size: 1.5em;
 }

@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {Inter} from 'next/font/google'
 import Header from "@/components/Header";
+import React from "react";
 
 // const inter = Inter({subsets: ['latin']})
 
@@ -33,6 +34,16 @@ export default function Home() {
                         Welcome to the redesign of my professional site. The website utilizes Next.js within the MERN
                         architecture. With Next.js, the site is able to take full advantage of automatic routing.
                     </p>
+
+                    <h2>Resume/CV</h2>
+                    <div className={"resume"}>
+                        <a href={"/resume/JPDSWEResume_050823.pdf"} target={"_blank"}>
+                            <button id={"pdf"}>Resume PDF</button>
+                        </a>
+                        <a href={"/resume/JPDSWEResume_050823.docx"}>
+                            <button id={"docx"}>Resume DOCX</button>
+                        </a>
+                    </div>
                 </section>
             </main>
             <footer>

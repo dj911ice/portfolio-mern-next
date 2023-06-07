@@ -23,6 +23,15 @@ function Experience(){
                     <ul>
                         <li>Web Master at Ballroom Club at the University of Michigan</li>
                     </ul>
+                    <h2>Resume/CV</h2>
+                    <div className={"resume"}>
+                        <a href={"/resume/JPDSWEResume_050823.pdf"} target={"_blank"}>
+                            <button id={"pdf"}>Resume PDF</button>
+                        </a>
+                        <a href={"/resume/JPDSWEResume_050823.docx"}>
+                            <button id={"docx"}>Resume DOCX</button>
+                        </a>
+                    </div>
                 </section>
             </main>
             <footer>
