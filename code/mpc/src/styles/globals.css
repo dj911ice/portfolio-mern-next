@@ -487,8 +487,24 @@ select {
   font-weight: bold;
 }
 
-.resume {
-  align-content: center;
+.admin {
+  float: right;
+  max-width: fit-content;
+  max-block-size: fit-content;
+  border-radius: 10px;
+  font-size: 75%;
+  margin-right: 5%;
+}
+
+.fetchData {
+  max-width: fit-content;
+  max-block-size: fit-content;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
+div .resume {
+  text-align: center;
 }
 
 #myName {

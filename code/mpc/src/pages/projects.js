@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "@/components/Header";
 import ImageGallery from 'react-image-gallery';
+import Link from "next/link";
 
 const projects = [
     {
@@ -54,7 +55,9 @@ function Projects() {
                 <section>
                     <h2>Awesome Projects</h2>
                     <div>
-                        <ImageGallery items={projects} />
+                        <ImageGallery
+                            items={projects}
+                        />
                     </div>
                 </section>
             </main>

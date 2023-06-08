@@ -12,7 +12,7 @@ function Experience(){
                     <p>Professional Software Engineering Experience:</p>
                     <ul>
                         <li>Ruby Developer at Prota Ventures</li>
-                        <li>Android Engineer as a independent consultant</li>
+                        <li>Android Engineer as an independent consultant</li>
                         <li>Senior Android Developer at a top fortune 100 company</li>
                         <li>Android Developer at the Mobile Apps Company</li>
                         <li>Web Administrator at Council for Economic Opportunities in Greater Cleveland</li>
@@ -21,7 +21,7 @@ function Experience(){
                     </ul>
                     <p>Volunteer Experience:</p>
                     <ul>
-                        <li>Web Master at Ballroom Club at the University of Michigan</li>
+                        <li>Webmaster at Ballroom Club at the University of Michigan</li>
                     </ul>
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>

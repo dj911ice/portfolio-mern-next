@@ -28,10 +28,10 @@ function Courses(){
             <Header/>
             <main>
                 <section>
-                    <button onClick={courseAdmin}>Courses Admin</button>
-                    <button onClick={retrieveCourses}>Fetch Courses</button>
+                    <button className={"fetchData"} onClick={retrieveCourses}>Fetch Courses</button>
+                    <button className={"admin"} onClick={courseAdmin}>Courses Admin</button>
                     <h2>Courses Taken</h2>
-                    <span>Table of Courses</span>
+                    {/*<span>Table of Courses</span>*/}
                     <CoursesTable
                     courses={courses}
                     />

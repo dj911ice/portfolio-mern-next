@@ -26,10 +26,10 @@ function Credentials({}){
             <Header/>
             <main>
                 <section>
-                    <button onClick={credentialAdmin}>Credentials Admin</button>
-                    <button onClick={retrieveCredentials}>Fetch Credentials</button>
+                    <button className={"fetchData"} onClick={retrieveCredentials}>Fetch Credentials</button>
+                    <button className={"admin"} onClick={credentialAdmin}>Credentials Admin</button>
                     <h2>My Credentials</h2>
-                    <span>Table of Credentials</span>
+                    {/*<span>Table of Credentials</span>*/}
                     <CredentialsTable
                     credentials={credentials}
                     />
