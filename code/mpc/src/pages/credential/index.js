@@ -27,8 +27,8 @@ function CredentialIndex(){
             <main>
                 <section>
                     <h2>Credential Actions</h2>
-                    <span>Index of Actions</span>
-                    <div>
+                    {/*<span>Index of Actions</span>*/}
+                    <div className={"dashboard"}>
                         <button
                             onClick={addCredential} >Add a Credential</button>
                         <button

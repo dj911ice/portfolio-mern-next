@@ -31,8 +31,8 @@ function CourseIndex(){
             <main>
                 <section>
                     <h2>Course Actions</h2>
-                    <h3>Index of Actions</h3>
-                    <div>
+                    {/*<h3>Index of Actions</h3>*/}
+                    <div className={"dashboard"}>
                         <button
                             onClick={addCourse} >Add a Course</button>
                         <button

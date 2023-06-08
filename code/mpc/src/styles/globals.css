@@ -503,6 +503,12 @@ select {
   margin-left: 5%;
 }
 
+.dashboard {
+  text-align: center;
+  max-block-size: fit-content;
+  border-radius: 10px;
+}
+
 div .resume {
   text-align: center;
 }
