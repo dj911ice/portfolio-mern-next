@@ -33,7 +33,7 @@ export const AddNewCourse = () => {
                 <section>
                     <h2>Add A New Course</h2>
                     <span>
-                        <form action={"/course"} method={"post"}>
+                        <form action={"/course/add"} method={"post"}>
                             <fieldset>
                                 <legend>New Course Form</legend>
                                 <label htmlFor={"courseIdentifier"}>Course Identifier:
