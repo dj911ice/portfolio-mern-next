@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
+import {redirect} from "next/navigation";
 
 export const AddNewCourse = () => {
     const [courseIdentifier, setCourseIdentifier] = useState('');
@@ -25,10 +26,6 @@ export const AddNewCourse = () => {
         }
     }
 
-    // useEffect(() => {
-    //     retrieveCourses();
-    // }, []);
-
     return (
         <>
             <Header/>
@@ -36,7 +33,7 @@ export const AddNewCourse = () => {
                 <section>
                     <h2>Add A New Course</h2>
                     <span>
-                        <form action={"/courses"} method={"post"}>
+                        <form action={"/course"} method={"post"}>
                             <fieldset>
                                 <legend>New Course Form</legend>
                                 <label htmlFor={"courseIdentifier"}>Course Identifier:
