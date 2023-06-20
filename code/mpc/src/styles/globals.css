@@ -482,6 +482,12 @@ select {
   display: inline-block;
 }
 
+.courseDT {
+  border: solid #59524C;
+  border-collapse: collapse;
+  padding-top: 2%;
+}
+
 .preferences {
   font-size: inherit;
   font-weight: bold;

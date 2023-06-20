@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
 import ImageGallery from 'react-image-gallery';
-import Link from "next/link";
 
 const projects = [
     {
@@ -47,18 +46,22 @@ const projects = [
 ]
 
 function Projects() {
-
     return (
         <>
             <Header/>
             <main>
                 <section>
                     <h2>Awesome Projects</h2>
-                    <div>
                         <ImageGallery
                             items={projects}
+                            autoPlay={true}
+                            showThumbnails={false}
                         />
-                    </div>
+                        {/*{projects.map((link, linkIndex) => {*/}
+                        {/*    return (*/}
+                        {/*        <a key={linkIndex} href={link.embedUrl} target={"_blank"}></a>*/}
+                        {/*    )*/}
+                        {/*})}*/}
                 </section>
             </main>
             <footer>
