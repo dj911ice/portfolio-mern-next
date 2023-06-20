@@ -486,6 +486,7 @@ select {
   border: solid #59524C;
   border-collapse: collapse;
   padding-top: 2%;
+  padding-right: 1%;
 }
 
 .preferences {
