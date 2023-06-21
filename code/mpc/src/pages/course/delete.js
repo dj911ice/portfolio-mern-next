@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 
 import Header from "@/components/Header";
-import DeleteCoursesTable from "@/components/DeleteCoursesTable";
 import {redirect} from "next/navigation";
+import DeleteCoursesDescriptionList from "@/components/DeleteCoursesDescriptionList";
 
 function DeleteCourses() {
 
@@ -35,10 +35,14 @@ function DeleteCourses() {
             <Header/>
             <main>
                 <section>
-                    <DeleteCoursesTable
+                    <DeleteCoursesDescriptionList
                         courses={courses}
                         onDelete={onDeleteCourse}
                     />
+                    {/*<DeleteCoursesTable*/}
+                    {/*    courses={courses}*/}
+                    {/*    onDelete={onDeleteCourse}*/}
+                    {/*/>*/}
                 </section>
             </main>
             <footer>

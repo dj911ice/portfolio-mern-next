@@ -520,6 +520,10 @@ div .resume {
   text-align: center;
 }
 
+#editButton, #deleteButton {
+  margin-left: 3%;
+  padding-left: 1%;
+}
 #myName {
   font-size: 1.5em;
 }
