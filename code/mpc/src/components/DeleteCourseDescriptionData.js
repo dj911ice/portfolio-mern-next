@@ -1,7 +1,8 @@
 import React from "react";
-import {router} from "next/client";
+import {useRouter} from "next/router";
 
 function DeleteCourseDescriptionData({course, onDelete}) {
+    const router = useRouter()
     const viewCourses = () => {
         router.push('/courses/');
     }

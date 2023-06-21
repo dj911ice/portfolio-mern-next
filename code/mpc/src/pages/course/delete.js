@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 
 import Header from "@/components/Header";
-import {redirect} from "next/navigation";
 import DeleteCoursesDescriptionList from "@/components/DeleteCoursesDescriptionList";
 
 function DeleteCourses() {

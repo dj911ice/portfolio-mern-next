@@ -1,7 +1,8 @@
 import React from "react";
-import {router} from "next/client";
+import {useRouter} from "next/router";
 
 function EditCourseDescriptionData({course, onEdit}) {
+    const router = useRouter()
     const viewCourses = () => {
         router.push('/courses/');
     }

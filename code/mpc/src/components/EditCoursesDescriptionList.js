@@ -1,6 +1,4 @@
 import React from "react";
-import CourseRow from "@/components/CourseRow";
-import CourseDescriptionData from "@/components/CourseDescriptionData";
 import EditCourseDescriptionData from "@/components/EditCourseDescriptionData";
 
 function EditCoursesDescriptionList({courses, onEdit}) {

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
-import {useRouter} from "next/router";
 
 
 export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{course}*/) => {
