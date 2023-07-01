@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 
 import Header from "@/components/Header";
 import DeleteCoursesDescriptionList from "@/components/DeleteCoursesDescriptionList";
+import {redirect} from "next/navigation";
 
 function DeleteCourses() {
 
@@ -19,10 +20,10 @@ function DeleteCourses() {
             const getResponse = await fetch('/api/courses');
             const courses = await getResponse.json();
             setCourses(courses);
-            alert(`The course with _id = ${_id} was deleted successfully! \n status code = ${response.status}`)
         } else {
-            console.log(`The course with _id = ${_id} was not deleted successfully! \n status code = ${response.status}`)
+            console.log(`The course with _id = ${_id} was not deleted successfully! \nstatus code = ${response.status}`)
         }
+        alert(`The course with id = ${_id} was deleted successfully! \nPlease refresh your browser.`)
     }
 
     useEffect(() => {

@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 import Header from "@/components/Header";
+import {redirect} from "next/navigation";
 
 export const AddNewCredential = () => {
     const [credentialType, setCredentialType] = useState('');
@@ -25,6 +26,7 @@ export const AddNewCredential = () => {
         } else {
             alert(`Unsuccessful operation, the credential was not added! \n status ${response.status}`);
         }
+        redirect("/credential")
     }
 
     // useEffect(() => {
