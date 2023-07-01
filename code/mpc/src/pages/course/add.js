@@ -19,7 +19,7 @@ export const AddNewCourse = () => {
             },
         });
 
-        if (response.status === 200) {
+        if (response.status === 201) {
             alert(`The course was added successfully!`);
         } else {
             alert(`Unsuccessful operation, the course was not added! \n status ${response.status}`);
