@@ -9,7 +9,7 @@
 /*  }*/
 /*...or hosted services like Google Fonts*/
 /*@import url(//fonts.googleapis.com/css?family=Font+Name);*/
-@import url('//fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 /* @import 'node_modules/modern-normalize/modern-normalize.css'; */
 /* npm install modern-normalize
   Resets elements for browser consistency.
@@ -48,7 +48,7 @@ body { /* Can alternatively define in html {} or :root {} */
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-body-text);
-  font-family: 'Cormorant', serif; /* Define with at least one font name and its related generic family name.*/
+  font-family: 'Work Sans', sans-serif; /* Define with at least one font name and its related generic family name.*/
   font-size: 1.5em;
   margin: 0 auto;
   padding: 2%;
