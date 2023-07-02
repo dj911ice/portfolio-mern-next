@@ -96,7 +96,7 @@ export const UpdateCredential = ({id, cType,cLevel, cField, cCertifier, cStatus}
                                 {/*</label>*/}
                                 <p>
                                     <button type={"submit"}
-                                            aria-disabled={false}
+                                            disabled={true}
                                             id={"update"}
                                             onClick={modifyCredential}>Update Credential
                                     </button>

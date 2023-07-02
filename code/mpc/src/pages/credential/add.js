@@ -77,7 +77,7 @@ export const AddNewCredential = () => {
                                 </label>
                                 <p>
                                     <button type={"submit"}
-                                            aria-disabled={false}
+                                            disabled={true}
                                             id={"add"}
                                             onClick={AddCredential}>Add Credential
                                     </button>

@@ -85,7 +85,7 @@ export const UpdateCourse = ({id, cIdentifier,cName, cDescription, cIssuer} /*{c
                                 </label>
                                 <p>
                                     <button type={"submit"}
-                                            aria-disabled={false}
+                                            disabled={true}
                                             id={"update"}
                                             onClick={modifyCourse}>Update Course
                                     </button>

@@ -20,7 +20,7 @@ function DeleteCourseDescriptionData({course, onDelete}) {
             <dd><span>Course Issuer: </span>{course.courseIssuer}</dd>
             <dd><span>Status: </span>{course.courseCompleted === true ? "Completed": "In Progress"}</dd>
             <br/>
-            <button id={"deleteButton"} onClick={() => onDelete(course._id)}>Remove</button>
+            <button id={"deleteButton"} onClick={() => onDelete(course._id)} disabled={true}>Remove</button>
             <button id={"viewCourses"} onClick={viewCourses} >View Courses</button>
             <button className={"admin"} onClick={courseAdmin}>Courses Admin</button>
 

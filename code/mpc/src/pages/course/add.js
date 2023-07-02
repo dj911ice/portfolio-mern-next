@@ -71,7 +71,7 @@ export const AddNewCourse = () => {
                                 </label>
                                 <p>
                                     <button type={"submit"}
-                                            aria-disabled={false}
+                                            disabled={true}
                                             id={"add"}
                                             onClick={AddCourse}>Add Course
                                     </button>

@@ -43,7 +43,7 @@ function CourseIndex(){
                             onClick={viewCourses} >View Courses</button>
                     </div>
                     <p style={{textAlign:'center'}}>
-                        CRUD Admin Panel: Unless Admin, click on: "View Courses" button.
+                        CRUD Admin Panel <br/> Buttons for CRUD actions are disabled for the public
                     </p>
                 </section>
             </main>
