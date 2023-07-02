@@ -13,7 +13,7 @@ function DeleteCredentialRow({credential, onDelete}) {
             <td>
                 <button
                     onClick={() => onDelete(credential._id)}
-                    disabled={true}>Remove</button>
+                    disabled={true}>Delete</button>
             </td>
         </tr>
     )

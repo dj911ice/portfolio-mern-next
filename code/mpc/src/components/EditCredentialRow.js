@@ -9,7 +9,7 @@ function EditCredentialRow({credential, onEdit}) {
             <td>{credential.credentialCertifier}</td>
             <td>{credential.credentialCompleted === true ? "Completed": "In Progress"}</td>
             {/*<td>{credential.conferralDate}</td>*/}
-            <td><button onClick={() => onEdit(credential)} disabled={true}>Modify</button></td>
+            <td><button onClick={() => onEdit(credential)} disabled={true}>Edit</button></td>
         </tr>
     )
 }

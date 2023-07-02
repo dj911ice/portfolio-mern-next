@@ -15,7 +15,7 @@ function EditCredentialsTable({credentials, onEdit}) {
                     <th>Certifier</th>
                     <th>Status</th>
                     {/*<th>Conferred</th>*/}
-                    <th>Edit</th>
+                    <th>Modify</th>
                 </tr>
                 </thead>
                 <tbody>
