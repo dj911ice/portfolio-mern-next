@@ -18,7 +18,12 @@
 
 /*Component-specific stylesheets, if any.*/
 /*  @import "component1.css";*/
-@import "~react-image-gallery/styles/css/image-gallery.css";
+/*@import "~react-image-gallery/styles/css/image-gallery.css";*/
+
+/*Tailwind CSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*   ----- Variables  -----  */
 :root {
@@ -39,7 +44,10 @@
   --color-background-table: rgba(163, 179, 197, 0.96);
 }
 
+
+
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+
 body { /* Can alternatively define in html {} or :root {} */
   background-attachment: fixed;
   /*background-color:var(--color-background-body);*/
@@ -520,6 +528,12 @@ select {
 div .resume {
   text-align: center;
 }
+
+/*.tailwind {*/
+/*  @tailwind base;*/
+/*  @tailwind components;*/
+/*  @tailwind utilities;*/
+/*}*/
 
 #editButton, #deleteButton {
   margin-left: 3%;

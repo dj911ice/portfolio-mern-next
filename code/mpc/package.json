@@ -13,6 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.0.4",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "http-proxy": "^1.18.1",
@@ -24,5 +25,10 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "react-image-gallery": "^1.2.11"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }
