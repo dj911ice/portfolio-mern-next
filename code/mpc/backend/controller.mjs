@@ -16,7 +16,8 @@ app.post('/courses', (req, res) => {
         req.body.courseName,
         req.body.courseDescription,
         req.body.courseIssuer,
-        req.body.courseCompleted
+        req.body.courseCompleted,
+        req.body.courseDate
     ).then(course => {
         res.status(201).json(course);
     }).catch(error => {
@@ -66,7 +67,8 @@ app.put('/courses/:_id', (req, res) => {
         req.body.courseName,
         req.body.courseDescription,
         req.body.courseIssuer,
-        req.body.courseCompleted
+        req.body.courseCompleted,
+        req.body.courseDate
     ).then(course => {
         res.json(course);
     }).catch(error => {
