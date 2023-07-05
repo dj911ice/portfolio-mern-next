@@ -31,7 +31,7 @@ function Credentials({}){
                     <h2>My Credentials</h2>
                     {/*<span>Table of Credentials</span>*/}
                     <CredentialsTable
-                    credentials={credentials}
+                    credentials={credentials.sort((a, b) => a.conferralDate > b.conferralDate ? -1: 1)}
                     />
                 </section>
             </main>
