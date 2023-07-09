@@ -34,10 +34,10 @@ export default function Home() {
 
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>
-                        <a href={"/resume/JPDSWEResume_050823.pdf"} target={"_blank"}>
+                        <a href={"/resume/JPDSWEResume_070923.pdf"} target={"_blank"}>
                             <button id={"pdf"}>Resume PDF</button>
                         </a>
-                        <a href={"/resume/JPDSWEResume_050823.docx"}>
+                        <a href={"/resume/JPDSWEResume_070923.docx"}>
                             <button id={"docx"}>Resume DOCX</button>
                         </a>
                     </div>
