@@ -10,7 +10,7 @@
 /*...or hosted services like Google Fonts*/
 /*@import url(//fonts.googleapis.com/css?family=Font+Name);*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+@import 'modern-normalize/modern-normalize.css';
 /* npm install modern-normalize
   Resets elements for browser consistency.
   https://www.npmjs.com/package/modern-normalize
@@ -69,7 +69,7 @@ header {
   /*background-color: var(--color-background-header);*/
   color: var(--color-heading-text);
   margin: 0;
-  padding: 0 0 1%;
+  padding: 1%;
   /*text-align: center;*/
   max-width: 100%;
   line-height: 1px;
@@ -140,14 +140,14 @@ nav {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 1% auto;
-  padding-top: 1.33%;
+  padding-top: 1.5%;
   line-height: 1%;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 1%;
+  padding: 1.50%;
   overflow: hidden;
 }
 
@@ -356,7 +356,7 @@ td {
   margin: 1%;
   padding: 1%;
   text-align: center;
-  font-size: 81%;
+  font-size: 85%;
   width: 1%;
   font-family: sans-serif;
 }
