@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Link from "next/link";
 import {mernLinks} from "@/utils/mernLinks";
 import {devLinks} from "@/utils/devLinks";
-import {blogLinks} from "@/utils/blogLinks";
 import {depLinks} from "@/utils/depLinks";
 function Links(){
     return (
@@ -12,20 +11,6 @@ function Links(){
             <main>
                 <section>
                     <h2>Links List</h2>
-                    <h3>Blog</h3>
-                    {blogLinks.map((link, blog) => {
-                        return (
-                            <ul key={blog}>
-                                <li style={{listStyleType: "none"}}>
-                                    <p>
-                                        <Link href={link.path} target={"_blank"}>
-                                            {link.name}
-                                        </Link>: {link.description}
-                                    </p>
-                                </li>
-                            </ul>
-                        )
-                    })}
                     <h3>MERN</h3>
                     {mernLinks.map((link, mern) => {
                         return (

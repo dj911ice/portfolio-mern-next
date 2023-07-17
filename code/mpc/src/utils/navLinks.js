@@ -24,11 +24,12 @@ export const navLinks = [
     //     path: "/contact"
     // },
     {
+        name: "Blog",
+        path: "/blog"
+    },
+    {
         name: "Links",
         path: "/links"
-    },
-    /*{
-        name: "Medium",
-        path: "https://medium.com/@justin.p.dickerson"
-    }*/
+    }
+
 ]
