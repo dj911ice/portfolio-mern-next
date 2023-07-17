@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 
 function Experience(){
@@ -8,12 +7,11 @@ function Experience(){
             <Header/>
             <main>
                 <section>
-                    <h2>My Experience</h2>
-                    <p>Professional Software Engineering Experience:</p>
+                    <h2>Professional Experience</h2>
+                    <p>Software Engineering Experience:</p>
                     <ul>
                         <li>Ruby Developer at Prota Ventures</li>
-                        <li>Android Engineer as an independent consultant</li>
-                        <li>Senior Android Developer at a top fortune 100 company</li>
+                        <li>Android Engineer as an Independent Consultant</li>
                         <li>Android Developer at the Mobile Apps Company</li>
                         <li>Web Administrator at Council for Economic Opportunities in Greater Cleveland</li>
                         <li>Web Marketing Associate at Home Appliance Mart</li>
@@ -25,10 +23,10 @@ function Experience(){
                     </ul>
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>
-                        <a href={"/resume/JPDSWEResume_050823.pdf"} target={"_blank"}>
+                        <a href={"/resume/JPDSWEResume_070923.pdf"} target={"_blank"}>
                             <button id={"pdf"}>Resume PDF</button>
                         </a>
-                        <a href={"/resume/JPDSWEResume_050823.docx"}>
+                        <a href={"/resume/JPDSWEResume_070923.docx"}>
                             <button id={"docx"}>Resume DOCX</button>
                         </a>
                     </div>

@@ -9,8 +9,8 @@
 /*  }*/
 /*...or hosted services like Google Fonts*/
 /*@import url(//fonts.googleapis.com/css?family=Font+Name);*/
-@import url('//fonts.googleapis.com/css2?family=Bellefair&display=swap');
-/* @import 'node_modules/modern-normalize/modern-normalize.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import 'modern-normalize/modern-normalize.css';
 /* npm install modern-normalize
   Resets elements for browser consistency.
   https://www.npmjs.com/package/modern-normalize
@@ -18,7 +18,12 @@
 
 /*Component-specific stylesheets, if any.*/
 /*  @import "component1.css";*/
-@import "~react-image-gallery/styles/css/image-gallery.css";
+/*@import "~react-image-gallery/styles/css/image-gallery.css";*/
+
+/*Tailwind CSS*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /*   ----- Variables  -----  */
 :root {
@@ -39,7 +44,10 @@
   --color-background-table: rgba(163, 179, 197, 0.96);
 }
 
+
+
 /*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+
 body { /* Can alternatively define in html {} or :root {} */
   background-attachment: fixed;
   /*background-color:var(--color-background-body);*/
@@ -48,7 +56,7 @@ body { /* Can alternatively define in html {} or :root {} */
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--color-body-text);
-  font-family: 'Cormorant', serif; /* Define with at least one font name and its related generic family name.*/
+  font-family: 'Work Sans', sans-serif; /* Define with at least one font name and its related generic family name.*/
   font-size: 1.5em;
   margin: 0 auto;
   padding: 2%;
@@ -61,7 +69,7 @@ header {
   /*background-color: var(--color-background-header);*/
   color: var(--color-heading-text);
   margin: 0;
-  padding: 0 0 1%;
+  padding: 1%;
   /*text-align: center;*/
   max-width: 100%;
   line-height: 1px;
@@ -132,13 +140,14 @@ nav {
   justify-content: flex-end;
   flex-wrap: wrap;
   margin: 1% auto;
+  padding-top: 1.5%;
   line-height: 1%;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 1%;
+  padding: 1.50%;
   overflow: hidden;
 }
 
@@ -300,12 +309,12 @@ table {
   border: solid 2px rgba(37, 70, 91, 0.88);
   border-collapse: collapse;
   background-color: var(--color-background-table);
-  table-layout: fixed;
+  table-layout: auto;
   margin: 1%;
   padding: 1%;
-  font-size: 90%;
-  width: 90%;
-  font-family: sans-serif;
+  font-size: 95%;
+  width: fit-content;
+  font-family: inherit;
 }
 
 caption {
@@ -347,9 +356,9 @@ td {
   margin: 1%;
   padding: 1%;
   text-align: center;
-  font-size: 91%;
+  font-size: 85%;
+  width: 1%;
   font-family: sans-serif;
-
 }
 
 td:nth-child(1) {
@@ -486,6 +495,7 @@ select {
   border: solid #59524C;
   border-collapse: collapse;
   padding-top: 2%;
+  padding-right: 1%;
 }
 
 .preferences {
@@ -519,6 +529,16 @@ div .resume {
   text-align: center;
 }
 
+/*.tailwind {*/
+/*  @tailwind base;*/
+/*  @tailwind components;*/
+/*  @tailwind utilities;*/
+/*}*/
+
+#editButton, #deleteButton {
+  margin-left: 3%;
+  padding-left: 1%;
+}
 #myName {
   font-size: 1.5em;
 }

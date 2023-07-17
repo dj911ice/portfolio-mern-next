@@ -38,6 +38,9 @@ function CredentialIndex(){
                         <button
                             onClick={viewCredentials} >View Credentials</button>
                     </div>
+                    <p style={{textAlign:'center'}}>
+                        CRUD Admin Panel <br/> Buttons for CRUD actions are disabled for the public
+                    </p>
                 </section>
             </main>
             <footer>

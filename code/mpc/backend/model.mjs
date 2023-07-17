@@ -22,18 +22,20 @@ const courseSchema = mongoose.Schema({
     courseName: {type: String, required: true},
     courseDescription: {type: String, required: false},
     courseIssuer: {type: String, required: true},
-    courseCompleted: {type: Boolean, default: false, required: false}
+    courseCompleted: {type: Boolean, default: false, required: false},
+    courseDate: {type: Date, default: null, required: false}
 });
 
 const Course = mongoose.model('Course', courseSchema);
 
-const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted) => {
+const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate) => {
     const course = new Course({
         courseIdentifier: courseIdentifier,
         courseName: courseName,
         courseDescription: courseDescription,
         courseIssuer: courseIssuer,
-        courseCompleted: courseCompleted
+        courseCompleted: courseCompleted,
+        courseDate: courseDate
     });
     return course.save();
 };
@@ -53,13 +55,14 @@ const deleteCoursesById = async (_id) => {
     return result.deletedCount;
 };
 
-const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted) => {
+const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate) => {
     const result = await Course.replaceOne({_id: _id}, {
         courseIdentifier: courseIdentifier,
         courseName: courseName,
         courseDescription: courseDescription,
         courseIssuer: courseIssuer,
-        courseCompleted: courseCompleted
+        courseCompleted: courseCompleted,
+        courseDate: courseDate
     });
     return {
         _id: _id,
@@ -81,7 +84,7 @@ const credentialSchema = mongoose.Schema({
     credentialType: {type: String, required: true},
     credentialLevel: {type: String, required: true},
     credentialField: {type: String, required: true},
-    conferralDate: {type: Date, default: Date.now(), required: false},
+    conferralDate: {type: Date, default: null, required: false},
     credentialCertifier: {type: String, required: true},
     credentialCompleted: {type: Boolean, default: false, required: false}
 });

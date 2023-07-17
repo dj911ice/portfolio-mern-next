@@ -20,10 +20,10 @@ function DeleteCredentials() {
             const getResponse = await fetch('/api/credentials');
             const credentials = await getResponse.json();
             setCredentials(credentials);
-            alert(`The credential with _id = ${_id} was deleted successfully! \n status code = ${response.status}`)
         } else {
             alert(`The credential with _id = ${_id} was not deleted successfully! \n status code = ${response.status}`)
         }
+        alert(`The credential with _id = ${_id} was deleted successfully! \nPlease refresh your browser.`)
     }
 
     useEffect(() => {

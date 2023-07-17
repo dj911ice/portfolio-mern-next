@@ -36,7 +36,7 @@ function Courses(){
                     {/*courses={courses}*/}
                     {/*/>*/}
                     <CoursesDescriptionList
-                        courses={courses}
+                        courses={courses.sort((a, b) => a.courseDate > b.courseDate ? -1: 1)}
                     />
                 </section>
             </main>

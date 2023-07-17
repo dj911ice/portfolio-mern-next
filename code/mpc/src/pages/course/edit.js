@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
-import EditCoursesTable from "@/components/EditCoursesTable";
+import EditCoursesDescriptionList from "@/components/EditCoursesDescriptionList";
 
 
 function EditCourses({setCourse}) {
@@ -40,10 +40,14 @@ function EditCourses({setCourse}) {
             <Header/>
             <main>
                 <section>
-                    <EditCoursesTable
-                        courses={courses}
-                        onEdit={courseById}
+                    <EditCoursesDescriptionList
+                            courses={courses}
+                            onEdit={courseById}
                     />
+                    {/*<EditCoursesTable*/}
+                    {/*    courses={courses}*/}
+                    {/*    onEdit={courseById}*/}
+                    {/*/>*/}
                 </section>
             </main>
             <footer>

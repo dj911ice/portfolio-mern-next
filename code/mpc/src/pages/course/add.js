@@ -24,6 +24,7 @@ export const AddNewCourse = () => {
         } else {
             alert(`Unsuccessful operation, the course was not added! \n status ${response.status}`);
         }
+        redirect("/course");
     }
 
     return (
@@ -33,7 +34,7 @@ export const AddNewCourse = () => {
                 <section>
                     <h2>Add A New Course</h2>
                     <span>
-                        <form action={"/course"} method={"post"}>
+                        <form action={"/courses"} method={"post"}>
                             <fieldset>
                                 <legend>New Course Form</legend>
                                 <label htmlFor={"courseIdentifier"}>Course Identifier:
@@ -70,7 +71,7 @@ export const AddNewCourse = () => {
                                 </label>
                                 <p>
                                     <button type={"submit"}
-                                            aria-disabled={false}
+                                            disabled={true}
                                             id={"add"}
                                             onClick={AddCourse}>Add Course
                                     </button>
