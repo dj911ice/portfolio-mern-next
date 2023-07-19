@@ -32,7 +32,7 @@ function Blog() {
                             {items.map((item, itemIndex) => (
                                 <div key={itemIndex}>
                                     <a href={item.link} target={"_blank"}>
-                                        <h4>{item.title}</h4>
+                                        <p style={{fontWeight: "bold"}}>{item.title}</p>
                                     </a>
                                 </div>
                             ))}
