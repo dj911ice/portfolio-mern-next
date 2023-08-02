@@ -20,16 +20,15 @@ export default function Home() {
                     <h2>Professional Site</h2>
                     <h3>Introduction</h3>
                     <p>
-                        Greetings and welcome to my professional website! My name is Justin Dickerson a freelance
-                        software engineer. Interested in hiring or booking me? Download my resume and send me an email
-                        along with a description of the job or project requirements. I will gladly review and reach out
-                        if there is potential fit. Have a wonderful day!
-                    </p>
-
-                    <h3>About</h3>
-                    <p>
-                        Welcome to the redesign of my professional site. The website utilizes Next.js within the MERN
-                        architecture. With Next.js, the site is able to take full advantage of automatic routing.
+                        I am Justin Dickerson, a software engineering professional and welcome to my redesigned website.
+                        A sampling of technologies that I work with include .Net/C#, MERN w/ Next.js, and Ruby on Rails
+                        along with Android for mobile devices. Additionally, have exposure to the following programming
+                        languages: Java, Kotlin, Python, JavaScript, and others. Within the projects section of the
+                        website, Tailwind CSS & Material Tailwind is utilized to create the scoped slideshow. Interested
+                        in offering employment, then my resume can be viewed/downloaded via the buttons below for the
+                        preferred format. A recruiter? Download my resume and send an email along with a job
+                        description/project requirements. All requests are reviewed and will reach out if there is a
+                        potential fit. Have a wonderful day!
                     </p>
 
                     <h2>Resume/CV</h2>
@@ -41,6 +40,20 @@ export default function Home() {
                             <button id={"docx"}>Resume DOCX</button>
                         </a>
                     </div>
+
+                    <h3>About</h3>
+                    <p>
+                        The site is organized into experience, projects, courses, credentials, blog, and links. To go
+                        back home then click, Home within the navigation. Experience is a listing of professional and
+                        volunteer experiences where as projects is where featured projects are shown via a slideshow.
+                        For courses & credentials, these are fetched from an Express server and are displayed
+                        appropriately to demonstrate different ways of displaying data. The blog page is reduced set of
+                        Medium articles authored my me and it is set to display 5 articles. Lastly, the links are a list
+                        (collection) of links where I give credit to the creators of the technologies & tools that allow
+                        not only myself but everyone else to create for the mobile, web, and beyond.
+                    </p>
+
+
                 </section>
             </main>
             <footer>

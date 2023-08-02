@@ -12,14 +12,15 @@ function Experience(){
                     <ul>
                         <li>Ruby Developer at Prota Ventures</li>
                         <li>Android Engineer as an Independent Consultant</li>
-                        <li>Android Developer at the Mobile Apps Company</li>
-                        <li>Web Administrator at Council for Economic Opportunities in Greater Cleveland</li>
-                        <li>Web Marketing Associate at Home Appliance Mart</li>
-                        <li>Web Administrator at Solutions for VIP Dancers</li>
+                        <li>Former Android Developer at the Mobile Apps Company</li>
+                        <li>Former Web Administrator at Council for Economic Opportunities in Greater Cleveland</li>
+                        <li>Former Web Marketing Associate at Home Appliance Mart</li>
+                        <li>Former Web Administrator at Solutions for VIP Dancers</li>
                     </ul>
                     <p>Volunteer Experience:</p>
                     <ul>
-                        <li>Webmaster at Ballroom Club at the University of Michigan</li>
+                        <li>Former Webmaster at Ballroom Club at the University of Michigan</li>
+                        <li>Former Director of Curriculum at Ballroom Club at the University of Michigan</li>
                     </ul>
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>

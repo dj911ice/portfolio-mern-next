@@ -8,7 +8,7 @@ function Projects() {
             <Header/>
             <main>
                 <section>
-                    <h2>Awesome Projects</h2>
+                    <h2>Featured Projects</h2>
                     <div>
                         <Carousel
                             transition={{ duration: 1.5 }}
