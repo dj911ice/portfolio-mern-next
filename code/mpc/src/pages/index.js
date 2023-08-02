@@ -48,7 +48,7 @@ export default function Home() {
                         volunteer experiences where as projects is where featured projects are shown via a slideshow.
                         For courses & credentials, these are fetched from an Express server and are displayed
                         appropriately to demonstrate different ways of displaying data. The blog page is reduced set of
-                        Medium articles authored my me and it is set to display 5 articles. Lastly, the links are a list
+                        Medium articles authored by me and it is set to display 5 articles. Lastly, the links are a list
                         (collection) of links where I give credit to the creators of the technologies & tools that allow
                         not only myself but everyone else to create for the mobile, web, and beyond.
                     </p>
