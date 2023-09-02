@@ -24,10 +24,10 @@ function Experience(){
                     </ul>
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>
-                        <a href={"/resume/JPDSWEResume_070923.pdf"} target={"_blank"}>
+                        <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
                             <button id={"pdf"}>Resume PDF</button>
                         </a>
-                        <a href={"/resume/JPDSWEResume_070923.docx"}>
+                        <a href={"/resume/JPDSWEResume_090223.docx"}>
                             <button id={"docx"}>Resume DOCX</button>
                         </a>
                     </div>

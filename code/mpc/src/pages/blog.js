@@ -12,7 +12,7 @@ function Blog() {
                 const res = await
                     fetch('https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@justin.p.dickerson');
                 const data = await res.json();
-                const items = data.items.slice(5);
+                const items = data.items.slice(-3);
                 setItems(items);
             } catch {
                 setError(true);
