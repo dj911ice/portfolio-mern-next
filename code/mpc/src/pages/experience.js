@@ -22,7 +22,7 @@ function Experience(){
                         <li>Former Webmaster at Ballroom Club at the University of Michigan</li>
                         <li>Former Director of Curriculum at Ballroom Club at the University of Michigan</li>
                     </ul>
-                    <h2>Resume/CV</h2>
+                    {/*<h2>Resume/CV</h2>
                     <div className={"resume"}>
                         <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
                             <button id={"pdf"}>Resume PDF</button>
@@ -30,7 +30,7 @@ function Experience(){
                         <a href={"/resume/JPDSWEResume_090223.docx"}>
                             <button id={"docx"}>Resume DOCX</button>
                         </a>
-                    </div>
+                    </div>*/}
                 </section>
             </main>
             <footer>

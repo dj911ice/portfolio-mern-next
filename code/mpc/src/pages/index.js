@@ -34,10 +34,20 @@ export default function Home() {
                     <h2>Resume/CV</h2>
                     <div className={"resume"}>
                         <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
-                            <button id={"pdf"}>Resume PDF</button>
+                            <button id={"pdf"}>Full Resume PDF</button>
                         </a>
                         <a href={"/resume/JPDSWEResume_090223.docx"}>
-                            <button id={"docx"}>Resume DOCX</button>
+                            <button id={"docx"}>Full Resume DOCX</button>
+                        </a><a href={"/resume/JPDResume_090423.pdf"} target={"_blank"}>
+                            <button id={"pdf"}>Short Resume PDF</button>
+                        </a>
+                        <a href={"/resume/JPDResume_090423.docx"}>
+                            <button id={"docx"}>Short Resume DOCX</button>
+                        </a><a href={"/resume/JPD_Credential_Background_Summary.pdf"} target={"_blank"}>
+                            <button id={"pdf"}>Credential Summary PDF</button>
+                        </a>
+                        <a href={"/resume/JPD_Credential_Background_Summary.docx"}>
+                            <button id={"docx"}>Credential Summary DOCX</button>
                         </a>
                     </div>
 
