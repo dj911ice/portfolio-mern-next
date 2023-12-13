@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function CredentialRow({credential}) {
     return (
@@ -6,7 +7,7 @@ function CredentialRow({credential}) {
             <td>{credential.credentialType}</td>
             <td>{credential.credentialLevel}</td>
             <td>{credential.credentialField}</td>
-            <td>{credential.credentialCertifier}</td>
+            <td><Link href={credential.institutionalLink} target={"_blank"}>{credential.credentialCertifier}</Link></td>
             <td>{credential.credentialCompleted === true ? "Completed": "In Progress"}</td>
             {/*<td>{credential.conferralDate}</td>*/}
         </tr>

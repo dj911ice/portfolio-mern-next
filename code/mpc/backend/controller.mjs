@@ -17,7 +17,8 @@ app.post('/courses', (req, res) => {
         req.body.courseDescription,
         req.body.courseIssuer,
         req.body.courseCompleted,
-        req.body.courseDate
+        req.body.courseDate,
+        req.body.institutionalLink
     ).then(course => {
         res.status(201).json(course);
     }).catch(error => {
@@ -68,7 +69,8 @@ app.put('/courses/:_id', (req, res) => {
         req.body.courseDescription,
         req.body.courseIssuer,
         req.body.courseCompleted,
-        req.body.courseDate
+        req.body.courseDate,
+        req.body.institutionalLink
     ).then(course => {
         res.json(course);
     }).catch(error => {
@@ -98,7 +100,8 @@ app.post('/credentials', (req, res) => {
         req.body.credentialField,
         req.body.conferralDate,
         req.body.credentialCertifier,
-        req.body.credentialCompleted
+        req.body.credentialCompleted,
+        req.body.institutionalLink
     ).then(credential => {
         res.status(201).json(credential);
     }).catch(error => {
@@ -147,7 +150,8 @@ app.put('/credentials/:_id', (req, res) => {
         req.body.credentialField,
         req.body.conferralDate,
         req.body.credentialCertifier,
-        req.body.credentialCompleted
+        req.body.credentialCompleted,
+        req.body.institutionalLink
     ).then(credential => {
         res.json(credential);
     }).catch(error => {

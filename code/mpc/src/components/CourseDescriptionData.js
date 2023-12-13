@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function CourseDescriptionData({course}) {
     return (
@@ -7,7 +8,7 @@ function CourseDescriptionData({course}) {
             <br/>
             <dd>{course.courseDescription}</dd>
             <br/>
-            <dd><span>Course Issuer: </span>{course.courseIssuer}</dd>
+            <dd><span>Course Issuer: </span><Link href={course.institutionalLink} target={"_blank"}>{course.courseIssuer}</Link></dd>
             <dd><span>Status: </span>{course.courseCompleted === true ? "Completed": "In Progress"}</dd>
             <br/>
         </dt>

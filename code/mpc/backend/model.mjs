@@ -23,19 +23,21 @@ const courseSchema = mongoose.Schema({
     courseDescription: {type: String, required: false},
     courseIssuer: {type: String, required: true},
     courseCompleted: {type: Boolean, default: false, required: false},
-    courseDate: {type: Date, default: null, required: false}
+    courseDate: {type: Date, default: null, required: false},
+    institutionalLink: {type: String, default: null, required: false}
 });
 
 const Course = mongoose.model('Course', courseSchema);
 
-const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate) => {
+const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate, institutionalLink) => {
     const course = new Course({
         courseIdentifier: courseIdentifier,
         courseName: courseName,
         courseDescription: courseDescription,
         courseIssuer: courseIssuer,
         courseCompleted: courseCompleted,
-        courseDate: courseDate
+        courseDate: courseDate,
+        institutionalLink: institutionalLink
     });
     return course.save();
 };
@@ -55,14 +57,15 @@ const deleteCoursesById = async (_id) => {
     return result.deletedCount;
 };
 
-const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate) => {
+const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate, institutionalLink) => {
     const result = await Course.replaceOne({_id: _id}, {
         courseIdentifier: courseIdentifier,
         courseName: courseName,
         courseDescription: courseDescription,
         courseIssuer: courseIssuer,
         courseCompleted: courseCompleted,
-        courseDate: courseDate
+        courseDate: courseDate,
+        institutionalLink: institutionalLink
     });
     return {
         _id: _id,
@@ -86,19 +89,22 @@ const credentialSchema = mongoose.Schema({
     credentialField: {type: String, required: true},
     conferralDate: {type: Date, default: null, required: false},
     credentialCertifier: {type: String, required: true},
-    credentialCompleted: {type: Boolean, default: false, required: false}
+    credentialCompleted: {type: Boolean, default: false, required: false},
+    institutionalLink: {type: String, default: null, required: false}
 });
 
 const Credential = mongoose.model('Credential', credentialSchema);
 
-const createCredential = async (credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted) => {
+const createCredential = async (credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted, institutionalLink) => {
     const credential = new Credential({
         credentialType: credentialType,
         credentialLevel: credentialLevel,
         credentialField: credentialField,
         conferralDate: conferralDate,
         credentialCertifier: credentialCertifier,
-        credentialCompleted: credentialCompleted
+        credentialCompleted: credentialCompleted,
+        institutionalLink: institutionalLink
+
     });
     return credential.save();
 };
@@ -118,14 +124,16 @@ const deleteCredentialsById = async (_id) => {
     return result.deletedCount;
 };
 
-const updateCredential = async (_id, credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted) => {
+const updateCredential = async (_id, credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted, institutionalLink) => {
     const result = await Credential.replaceOne({_id: _id}, {
         credentialType: credentialType,
         credentialLevel: credentialLevel,
         credentialField: credentialField,
         conferralDate: conferralDate,
         credentialCertifier: credentialCertifier,
-        credentialCompleted: credentialCompleted
+        credentialCompleted: credentialCompleted,
+        institutionalLink: institutionalLink
+
     });
     return {
         _id: _id,
