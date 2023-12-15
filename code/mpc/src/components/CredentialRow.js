@@ -7,8 +7,12 @@ function CredentialRow({credential}) {
             <td>{credential.credentialType}</td>
             <td>{credential.credentialLevel}</td>
             <td>{credential.credentialField}</td>
-            <td><Link href={credential.institutionalLink} target={"_blank"}>{credential.credentialCertifier}</Link></td>
-            <td>{credential.credentialCompleted === true ? "Completed": "In Progress"}</td>
+            <td>
+                {credential.institutionalLink === null ?
+                    credential.credentialCertifier :
+                    <Link href={credential.institutionalLink} target={"_blank"}>{credential.credentialCertifier}</Link>}
+            </td>
+            <td>{credential.credentialCompleted === true ? "Completed" : "In Progress"}</td>
             {/*<td>{credential.conferralDate}</td>*/}
         </tr>
     )
