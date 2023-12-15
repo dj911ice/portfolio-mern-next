@@ -38,8 +38,10 @@ app.get('/courses', (req, res) => {
             if (course !== null) {
                 res.json(course);
             } else {
-                res.status(404).json({Error: 'Resource non-existent, the list of courses requested was not' +
-                        ' found.'});
+                res.status(404).json({
+                    Error: 'Resource non-existent, the list of courses requested was not' +
+                        ' found.'
+                });
             }
         }).catch(error => {
         console.log(error);
@@ -101,6 +103,7 @@ app.post('/credentials', (req, res) => {
         req.body.conferralDate,
         req.body.credentialCertifier,
         req.body.credentialCompleted,
+        req.body.credentialLink,
         req.body.institutionalLink
     ).then(credential => {
         res.status(201).json(credential);
@@ -119,8 +122,10 @@ app.get('/credentials', (req, res) => {
             if (credential !== null) {
                 res.json(credential);
             } else {
-                res.status(404).json({Error: 'Resource non-existent, the list of credentials requested was not' +
-                        ' found.'});
+                res.status(404).json({
+                    Error: 'Resource non-existent, the list of credentials requested was not' +
+                        ' found.'
+                });
             }
         }).catch(error => {
         console.log(error);
@@ -151,6 +156,7 @@ app.put('/credentials/:_id', (req, res) => {
         req.body.conferralDate,
         req.body.credentialCertifier,
         req.body.credentialCompleted,
+        req.body.credentialLink,
         req.body.institutionalLink
     ).then(credential => {
         res.json(credential);

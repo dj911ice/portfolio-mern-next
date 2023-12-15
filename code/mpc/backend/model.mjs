@@ -90,12 +90,15 @@ const credentialSchema = mongoose.Schema({
     conferralDate: {type: Date, default: null, required: false},
     credentialCertifier: {type: String, required: true},
     credentialCompleted: {type: Boolean, default: false, required: false},
+    credentialLink: {type: String, default: null, required: false},
     institutionalLink: {type: String, default: null, required: false}
+
 });
 
 const Credential = mongoose.model('Credential', credentialSchema);
 
-const createCredential = async (credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted, institutionalLink) => {
+const createCredential = async (credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier,
+                                credentialCompleted, credentialLink, institutionalLink) => {
     const credential = new Credential({
         credentialType: credentialType,
         credentialLevel: credentialLevel,
@@ -103,6 +106,7 @@ const createCredential = async (credentialType, credentialLevel, credentialField
         conferralDate: conferralDate,
         credentialCertifier: credentialCertifier,
         credentialCompleted: credentialCompleted,
+        credentialLink: credentialLink,
         institutionalLink: institutionalLink
 
     });
@@ -124,7 +128,9 @@ const deleteCredentialsById = async (_id) => {
     return result.deletedCount;
 };
 
-const updateCredential = async (_id, credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier, credentialCompleted, institutionalLink) => {
+const updateCredential = async (_id, credentialType, credentialLevel, credentialField, conferralDate,
+                                credentialCertifier, credentialCompleted,
+                                credentialLink, institutionalLink) => {
     const result = await Credential.replaceOne({_id: _id}, {
         credentialType: credentialType,
         credentialLevel: credentialLevel,
@@ -132,6 +138,7 @@ const updateCredential = async (_id, credentialType, credentialLevel, credential
         conferralDate: conferralDate,
         credentialCertifier: credentialCertifier,
         credentialCompleted: credentialCompleted,
+        credentialLink: credentialLink,
         institutionalLink: institutionalLink
 
     });
