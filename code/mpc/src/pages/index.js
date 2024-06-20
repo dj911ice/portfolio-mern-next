@@ -6,6 +6,50 @@ import React from "react";
 // const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
+    const [resumeValue, setResumeValue] = React.useState(0);
+
+    function resumeDownload (resumeValue) {
+        if (resumeValue === 0) {
+
+        } else if (resumeValue === 1) {
+            return (
+                <>
+                    <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
+                        <button id={"pdf"}>Full Resume PDF</button>
+                    </a> &nbsp;
+                    <a href={"/resume/JPDSWEResume_090223.docx"}>
+                        <button id={"docx"}>Full Resume DOCX</button>
+                    </a>
+                </>
+
+            )
+
+        } else if (resumeValue === 2) {
+            return (
+                <>
+                    <a href={"/resume/JPDResume_090423.pdf"} target={"_blank"}>
+                        <button id={"pdf"}>Short Resume PDF</button>
+                    </a> &nbsp;
+                    <a href={"/resume/JPDResume_090423.docx"}>
+                        <button id={"docx"}>Short Resume DOCX</button>
+                    </a>
+                </>
+
+            )
+        } else if (resumeValue === 3) {
+            return (
+                <>
+                    <a href={"/resume/JPD_Credential_Background_Summary.pdf"} target={"_blank"}>
+                        <button id={"pdf"}>Credential Summary PDF</button>
+                    </a> &nbsp;
+                    <a href={"/resume/JPD_Credential_Background_Summary.docx"}>
+                        <button id={"docx"}>Credential Summary DOCX</button>
+                    </a>
+                </>
+            )
+        }
+    }
+
     return (
         <>
             <Head>
@@ -32,24 +76,23 @@ export default function Home() {
                     </p>
 
                     <h2>Resume/CV</h2>
-                    <div className={"resume"}>
-                        <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
-                            <button id={"pdf"}>Full Resume PDF</button>
-                        </a>
-                        <a href={"/resume/JPDSWEResume_090223.docx"}>
-                            <button id={"docx"}>Full Resume DOCX</button>
-                        </a><a href={"/resume/JPDResume_090423.pdf"} target={"_blank"}>
-                            <button id={"pdf"}>Short Resume PDF</button>
-                        </a>
-                        <a href={"/resume/JPDResume_090423.docx"}>
-                            <button id={"docx"}>Short Resume DOCX</button>
-                        </a><a href={"/resume/JPD_Credential_Background_Summary.pdf"} target={"_blank"}>
-                            <button id={"pdf"}>Credential Summary PDF</button>
-                        </a>
-                        <a href={"/resume/JPD_Credential_Background_Summary.docx"}>
-                            <button id={"docx"}>Credential Summary DOCX</button>
-                        </a>
-                    </div>
+                    <section className={"resume"}>
+                        <form>
+                            <select className={"center-middle"}
+                                    name={"resumeValue"}
+                                    id="resumeValue"
+                                    value={resumeValue}
+                                    onChange={e => {
+                                        setResumeValue(parseInt(e.target.value))
+                                    }}>
+                                <option disabled={false} value={0}>Select to Download</option>
+                                <option value={1}>Full Resume</option>
+                                <option value={2}>Short Resume</option>
+                                <option value={3}>Credential Summary</option>
+                            </select>
+                        </form>
+                        {resumeDownload(resumeValue)}
+                    </section>
 
                     <h3>About</h3>
                     <p>
@@ -62,8 +105,6 @@ export default function Home() {
                         (collection) of links where I give credit to the creators of the technologies & tools that allow
                         not only myself but everyone else to create for the mobile, web, and beyond.
                     </p>
-
-
                 </section>
             </main>
             <footer>
