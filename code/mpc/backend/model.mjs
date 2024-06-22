@@ -24,12 +24,14 @@ const courseSchema = mongoose.Schema({
     courseIssuer: {type: String, required: true},
     courseCompleted: {type: Boolean, default: false, required: false},
     courseDate: {type: Date, default: null, required: false},
-    institutionalLink: {type: String, default: null, required: false}
+    institutionalLink: {type: String, default: null, required: false},
+    courseVisibility: {type: Boolean, default: false, required: false}
 });
 
 const Course = mongoose.model('Course', courseSchema);
 
-const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate, institutionalLink) => {
+const createCourse = async (courseIdentifier, courseName, courseDescription, courseIssuer,
+                            courseCompleted, courseDate, institutionalLink, courseVisibility) => {
     const course = new Course({
         courseIdentifier: courseIdentifier,
         courseName: courseName,
@@ -37,7 +39,8 @@ const createCourse = async (courseIdentifier, courseName, courseDescription, cou
         courseIssuer: courseIssuer,
         courseCompleted: courseCompleted,
         courseDate: courseDate,
-        institutionalLink: institutionalLink
+        institutionalLink: institutionalLink,
+        courseVisibility: courseVisibility
     });
     return course.save();
 };
@@ -57,7 +60,8 @@ const deleteCoursesById = async (_id) => {
     return result.deletedCount;
 };
 
-const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer, courseCompleted, courseDate, institutionalLink) => {
+const updateCourse = async (_id, courseIdentifier, courseName, courseDescription, courseIssuer,
+                            courseCompleted, courseDate, institutionalLink, courseVisibility) => {
     const result = await Course.replaceOne({_id: _id}, {
         courseIdentifier: courseIdentifier,
         courseName: courseName,
@@ -65,7 +69,8 @@ const updateCourse = async (_id, courseIdentifier, courseName, courseDescription
         courseIssuer: courseIssuer,
         courseCompleted: courseCompleted,
         courseDate: courseDate,
-        institutionalLink: institutionalLink
+        institutionalLink: institutionalLink,
+        courseVisibility: courseVisibility
     });
     return {
         _id: _id,
@@ -91,14 +96,14 @@ const credentialSchema = mongoose.Schema({
     credentialCertifier: {type: String, required: true},
     credentialCompleted: {type: Boolean, default: false, required: false},
     credentialLink: {type: String, default: null, required: false},
-    institutionalLink: {type: String, default: null, required: false}
-
+    institutionalLink: {type: String, default: null, required: false},
+    credentialVisibility: {type: Boolean, default: false, required: false}
 });
 
 const Credential = mongoose.model('Credential', credentialSchema);
 
 const createCredential = async (credentialType, credentialLevel, credentialField, conferralDate, credentialCertifier,
-                                credentialCompleted, credentialLink, institutionalLink) => {
+                                credentialCompleted, credentialLink, institutionalLink, credentialVisibility) => {
     const credential = new Credential({
         credentialType: credentialType,
         credentialLevel: credentialLevel,
@@ -107,8 +112,8 @@ const createCredential = async (credentialType, credentialLevel, credentialField
         credentialCertifier: credentialCertifier,
         credentialCompleted: credentialCompleted,
         credentialLink: credentialLink,
-        institutionalLink: institutionalLink
-
+        institutionalLink: institutionalLink,
+        credentialVisibility: credentialVisibility
     });
     return credential.save();
 };
@@ -130,7 +135,7 @@ const deleteCredentialsById = async (_id) => {
 
 const updateCredential = async (_id, credentialType, credentialLevel, credentialField, conferralDate,
                                 credentialCertifier, credentialCompleted,
-                                credentialLink, institutionalLink) => {
+                                credentialLink, institutionalLink, credentialVisibility) => {
     const result = await Credential.replaceOne({_id: _id}, {
         credentialType: credentialType,
         credentialLevel: credentialLevel,
@@ -139,8 +144,8 @@ const updateCredential = async (_id, credentialType, credentialLevel, credential
         credentialCertifier: credentialCertifier,
         credentialCompleted: credentialCompleted,
         credentialLink: credentialLink,
-        institutionalLink: institutionalLink
-
+        institutionalLink: institutionalLink,
+        credentialVisibility: credentialVisibility
     });
     return {
         _id: _id,
