@@ -34,13 +34,13 @@ function CourseIndex(){
                     {/*<h3>Index of Actions</h3>*/}
                     <div className={"dashboard"}>
                         <button
-                            onClick={addCourse} >Add a Course</button>
+                            onClick={addCourse} disabled={true} >Add a Course</button>
                         <button
-                            onClick={updateCourse} >Update a Course</button>
+                            onClick={updateCourse} disabled={true} >Update a Course</button>
                         <button
-                            onClick={deleteCourse} >Delete a Course</button>
+                            onClick={deleteCourse} disabled={true} >Delete a Course</button>
                         <button
-                            onClick={viewCourses} >View Courses</button>
+                            onClick={viewCourses} disabled={true} >View Courses</button>
                     </div>
                     <p style={{textAlign:'center'}}>
                         CRUD Admin Panel <br/> Buttons for CRUD actions are disabled for the public

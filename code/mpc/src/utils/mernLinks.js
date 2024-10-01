@@ -2,7 +2,7 @@ export const mernLinks = [
     {
         name: "Mongo DB",
         path: "https://www.mongodb.com/",
-        description: "One fo the original non-relational databases.  Utilized in the cloud via its Atlas cluster" +
+        description: "One of the original non-relational databases.  Utilized in the cloud via its Atlas cluster" +
             " platform."
     },
 

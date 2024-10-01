@@ -4,32 +4,32 @@ export const navLinks = [
         path: "/"
     },
     {
-        name: "Experience",
-        path: "/experience"
-    },
-    {
-        name: "Projects",
-        path: "/projects"
-    },
-    {
-        name: "Courses",
-        path: "/courses"
-    },
-    {
         name: "Credentials",
         path: "/credentials"
     },
+    /*{
+        name: "Courses",
+        path: "/courses"
+    },*/
+    {
+        name: "Experience",
+        path: "/experience"
+    },
+    /*{
+        name: "Projects",
+        path: "/projects"
+    },*/
     // {
     //     name: "Contact",
     //     path: "/contact"
     // },
-    {
+    /*{
         name: "Blog",
         path: "/blog"
-    },
-    {
+    },*/
+    /*{
         name: "Links",
         path: "/links"
-    }
+    }*/
 
 ]

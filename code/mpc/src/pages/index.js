@@ -14,11 +14,11 @@ export default function Home() {
         } else if (resumeValue === 1) {
             return (
                 <>
-                    <a href={"/resume/JPDSWEResume_090223.pdf"} target={"_blank"}>
-                        <button id={"pdf"}>Full Resume PDF</button>
+                    <a href={"/resume/JPD1PageResume_092824ATS.pdf"} target={"_blank"}>
+                        <button id={"pdf"}>Resume PDF</button>
                     </a> &nbsp;
-                    <a href={"/resume/JPDSWEResume_090223.docx"}>
-                        <button id={"docx"}>Full Resume DOCX</button>
+                    <a href={"/resume/JPD1PageResume_092824ATS.docx"}>
+                        <button id={"docx"}>Resume DOCX</button>
                     </a>
                 </>
 
@@ -64,15 +64,9 @@ export default function Home() {
                     <h2>Professional Site</h2>
                     <h3>Introduction</h3>
                     <p>
-                        I am Justin Dickerson, a software engineering professional and welcome to my redesigned website.
-                        A sampling of technologies that I work with include .Net/C#, MERN w/ Next.js, and Ruby on Rails
-                        along with Android for mobile devices. Additionally, have exposure to the following programming
-                        languages: Java, Kotlin, Python, JavaScript, and others. Within the projects section of the
-                        website, Tailwind CSS & Material Tailwind is utilized to create the scoped slideshow. Interested
-                        in offering employment, then my resume can be viewed/downloaded via the buttons below for the
-                        preferred format. A recruiter? Download my resume and send an email along with a job
-                        description/project requirements. All requests are reviewed and will reach out if there is a
-                        potential fit. Have a wonderful day!
+                        Welcome to my website! I am Justin a computing professional and software engineer.
+                        Interested in offering employment or a recruiter? View/Download my latest resume below and send me an email along with a job/project description.
+                        Have a wonderful day!
                     </p>
 
                     <h2>Resume/CV</h2>
@@ -86,15 +80,15 @@ export default function Home() {
                                         setResumeValue(parseInt(e.target.value))
                                     }}>
                                 <option disabled={false} value={0}>Select to Download</option>
-                                <option value={1}>Full Resume</option>
-                                <option value={2}>Short Resume</option>
-                                <option value={3}>Credential Summary</option>
+                                <option value={1}>Resume</option>
+                                {/*<option value={2}>Short Resume</option>*/}
+                                {/*<option value={3}>Credential Summary</option>*/}
                             </select>
                         </form>
                         {resumeDownload(resumeValue)}
                     </section>
 
-                    <h3>About</h3>
+                    {/*<h3>About</h3>
                     <p>
                         The site is organized into experience, projects, courses, credentials, blog, and links. To go
                         back home then click, Home within the navigation. Experience is a listing of professional and
@@ -104,7 +98,7 @@ export default function Home() {
                         Medium articles authored by me and it is set to display 3 articles. Lastly, the links are a list
                         (collection) of links where I give credit to the creators of the technologies & tools that allow
                         not only myself but everyone else to create for the mobile, web, and beyond.
-                    </p>
+                    </p>*/}
                 </section>
             </main>
             <footer>

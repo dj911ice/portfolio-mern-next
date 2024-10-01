@@ -30,13 +30,13 @@ function CredentialIndex(){
                     {/*<span>Index of Actions</span>*/}
                     <div className={"dashboard"}>
                         <button
-                            onClick={addCredential} >Add a Credential</button>
+                            onClick={addCredential} disabled={true} >Add a Credential</button>
                         <button
-                            onClick={updateCredential} >Update a Credential</button>
+                            onClick={updateCredential} disabled={true}>Update a Credential</button>
                         <button
-                            onClick={deleteCredential} >Delete a Credential</button>
+                            onClick={deleteCredential} disabled={true} >Delete a Credential</button>
                         <button
-                            onClick={viewCredentials} >View Credentials</button>
+                            onClick={viewCredentials} disabled={true} >View Credentials</button>
                     </div>
                     <p style={{textAlign:'center'}}>
                         CRUD Admin Panel <br/> Buttons for CRUD actions are disabled for the public
