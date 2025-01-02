@@ -10,11 +10,11 @@
   "author": "Justin P. Dickerson",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.7",
+    "dotenv": "^16.0.3",
     "express": "5.0.0",
     "mongoose": "^8.9.3",
     "nodemailer": "^6.9.2",
-    "nodemon": "^3.1.9",
+    "nodemon": "^2.0.22",
     "rest": "^2.0.0"
   }
 }
