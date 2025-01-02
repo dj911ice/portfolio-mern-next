@@ -6,7 +6,7 @@ import * as credentials from "./model.mjs";
 import {retrieveCredentialsById} from "./model.mjs";
 
 
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT;
 const app = express();
 app.use(express.json());
 
