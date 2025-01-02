@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
 import CredentialsTable from "@/components/CredentialsTable";
+import Footer from "@/components/Footer";
 
 function Credentials({}) {
     const router = useRouter();
@@ -41,9 +42,7 @@ function Credentials({}) {
                     />
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+           <Footer/>
         </>
     )
 }

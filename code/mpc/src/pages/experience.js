@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function Experience(){
     return (
@@ -37,9 +38,7 @@ function Experience(){
                     </div>*/}
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+            <Footer/>
         </>
     )
 }
