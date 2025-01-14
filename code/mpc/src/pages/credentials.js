@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 import Header from "@/components/Header";
 import {useRouter} from "next/router";
+import {credentialsStatic} from "@/utils/credentials";
 import CredentialsTable from "@/components/CredentialsTable";
+
 
 function Credentials({}) {
     const router = useRouter();
@@ -14,9 +16,13 @@ function Credentials({}) {
 
     const retrieveCredentials = async () => {
         const response = await fetch('/api/credentials');
+        if (!response.ok) {
+            setCredentials(credentialsStatic);
+        }
         const credentials = await response.json();
         setCredentials(credentials);
     }
+
 
     useEffect(() => {
         retrieveCredentials();
