@@ -16,11 +16,12 @@ function Credentials({}) {
 
     const retrieveCredentials = async () => {
         const response = await fetch('/api/credentials');
-        if (!response.ok) {
+        if (response.status !== null && response.ok) {
+            const credentials = await response.json();
+            setCredentials(credentials);
+        } else {
             setCredentials(credentialsStatic);
         }
-        const credentials = await response.json();
-        setCredentials(credentials);
     }
 
 
