@@ -19,13 +19,13 @@ function Credentials({}) {
         if (response.status !== null && response.ok) {
             const credentials = await response.json();
             setCredentials(credentials);
-        } else {
-            setCredentials(credentialsStatic);
         }
+        setCredentials(credentialsStatic);
     }
 
 
     useEffect(() => {
+        setCredentials(credentialsStatic);
         retrieveCredentials();
     }, []);
 
