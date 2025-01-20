@@ -26,7 +26,7 @@ function Credentials({}) {
 
 
     useEffect(() => {
-        setCredentials(credentialsStatic);
+        // setCredentials(credentialsStatic);
         retrieveCredentials();
     }, []);
 
