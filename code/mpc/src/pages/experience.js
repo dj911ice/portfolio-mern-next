@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 function Experience(){
     return (
@@ -12,9 +13,7 @@ function Experience(){
                     <ul>
                         <li>Ruby Developer at Prota Ventures</li>
                         <li>Android Engineer as an Independent Consultant</li>
-                        <li>Former Android Developer at the Mobile Apps Company</li>
-                        <li>Former Web Administrator at Council for Economic Opportunities in Greater Cleveland</li>
-                        <li>Former Web Marketing Associate at Home Appliance Mart</li>
+                        <li>Former Android Developer at a Fortune 500 Company</li>
                     </ul>
                     <p>Undergraduate Learning Assistant (Oregon State University)</p>
                     <ul>
@@ -23,7 +22,6 @@ function Experience(){
                     <p>Volunteer</p>
                     <ul>
                         <li>Former Webmaster at Ballroom Club at the University of Michigan</li>
-                        <li>Former Director of Curriculum at Ballroom Club at the University of Michigan</li>
                     </ul>
 
                     {/*<h2>Resume/CV</h2>
@@ -37,9 +35,7 @@ function Experience(){
                     </div>*/}
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+            <Footer/>
         </>
     )
 }

@@ -10,7 +10,7 @@ function Nav() {
             <Link href={"/courses"}>Courses</Link>
             <Link href={"/credentials"}>Credentials</Link>
             <Link href={"/contact"}>Contact</Link>
-            <Link href={"/links"}>Links</Link>
+            <Link href={"/about.js"}>Links</Link>
         </nav>
     );
 }

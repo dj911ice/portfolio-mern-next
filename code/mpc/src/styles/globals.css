@@ -51,7 +51,7 @@
 body { /* Can alternatively define in html {} or :root {} */
   background-attachment: fixed;
   /*background-color:var(--color-background-body);*/
-  background-image: url("../images/mbsc_beach_resized_compressed.jpg");
+  background-image: url("../images/montrel-ca.jpg");
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;

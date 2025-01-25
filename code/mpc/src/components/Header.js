@@ -11,7 +11,6 @@ function Header() {
                     <div>
                         <p id={"myName"}>Justin P. Dickerson</p>
                         <p>Computing Professional</p>
-                        <p>Software Engineer</p>
                         <Link href={"https://www.linkedin.com/in/justinpdickerson/"}
                               target={"_blank"}><FaLinkedin id={"linkedin"}></FaLinkedin></Link>
                         <span> </span>

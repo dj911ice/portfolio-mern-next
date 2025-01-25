@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import {useRouter} from "next/router";
 import {credentialsStatic} from "@/utils/credentials";
 import CredentialsTable from "@/components/CredentialsTable";
+import Footer from "@/components/Footer";
 
 
 function Credentials({}) {
@@ -35,13 +36,11 @@ function Credentials({}) {
             <Header/>
             <main>
                 <section>
-                    <button className={"fetchData"} onClick={retrieveCredentials}>Fetch Credentials</button>
-                    <button className={"admin"} onClick={credentialAdmin}>Credentials Admin</button>
-                    <h2>Relevant Credentials</h2>
-                    <p>
-                        Table of relevant credentials earned or being pursued. If
-                        credentials are not being displayed then click on the <q>Fetch Credentials</q> button and wait
-                        for the api server to service the request
+                    <button hidden={true} className={"fetchData"} onClick={retrieveCredentials}>Fetch Credentials</button>
+                    <button hidden={true} className={"admin"} onClick={credentialAdmin}>Credentials Admin</button>
+                    <h2>Credentials, Courses, and Trainings</h2>
+                    <p style={{textAlign: "center"}}>
+                        Table of highlighted & relevant credentials, courses, and trainings.
                     </p>
                     {/*<span>Table of Credentials</span>*/}
                     <CredentialsTable
@@ -49,9 +48,7 @@ function Credentials({}) {
                     />
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+            <Footer/>
         </>
     )
 }

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {Inter} from 'next/font/google'
 import Header from "@/components/Header";
 import React from "react";
+import Footer from "@/components/Footer";
 
 // const inter = Inter({subsets: ['latin']})
 
@@ -101,9 +102,7 @@ export default function Home() {
                     </p>*/}
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+            <Footer/>
         </>
     )
 }
