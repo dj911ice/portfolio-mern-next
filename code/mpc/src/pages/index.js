@@ -15,10 +15,10 @@ export default function Home() {
         } else if (resumeValue === 1) {
             return (
                 <>
-                    <a href={"/resume/JPD1PageResume_092824ATS.pdf"} target={"_blank"}>
+                    <a href={"/resume/JPD1PageResume_013125ATS.pdf"} target={"_blank"}>
                         <button id={"pdf"}>Resume PDF</button>
                     </a> &nbsp;
-                    <a href={"/resume/JPD1PageResume_092824ATS.docx"}>
+                    <a href={"/resume/JPD1PageResume_013125ATS.docx"}>
                         <button id={"docx"}>Resume DOCX</button>
                     </a>
                 </>
@@ -65,9 +65,12 @@ export default function Home() {
                     <h2>Professional Site</h2>
                     <h3>Introduction</h3>
                     <p>
-                        Welcome to my website! I am Justin a computing professional and software engineer.
-                        Interested in offering employment or a recruiter? View/Download my latest resume below and send me an email along with a job/project description.
-                        Have a wonderful day!
+                        Welcome to my website! I am Justin a computing professional, engaging in software engineering
+                        who has consulted with individuals and companies in providing software solutions. Interested in an engagement with me?
+                        View my resume/cv and send me an email detailing requirements for your project. For more information about my experience and qualifications,
+                        then feel free to check out the Credentials and Experience navigation. Want to connect or look at my GitHub? They are provided within the header.
+                        Have a great day!
+
                     </p>
 
                     <h2>Resume/CV</h2>
