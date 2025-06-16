@@ -18,6 +18,7 @@ function Experience(){
                     <p>Undergraduate Learning Assistant (Oregon State University)</p>
                     <ul>
                         <li>CS 340: Introduction to Databases</li>
+                        <li>CS 362: Software Engineering 2 (Software Testing)</li>
                     </ul>
                     <p>Volunteer</p>
                     <ul>
