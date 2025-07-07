@@ -4,13 +4,14 @@ import Link from "next/link";
 import {mernLinks} from "@/utils/mernLinks";
 import {devLinks} from "@/utils/devLinks";
 import {depLinks} from "@/utils/depLinks";
-function Links(){
+import Footer from "@/components/Footer";
+function About(){
     return (
         <>
             <Header/>
             <main>
                 <section>
-                    <h2>Links List</h2>
+                    <h2>About</h2>
                     <h3>MERN</h3>
                     {mernLinks.map((link, mern) => {
                         return (
@@ -55,11 +56,9 @@ function Links(){
                     })}
                 </section>
             </main>
-            <footer>
-                <p>&copy; 2023 Justin Dickerson. All rights reserved.</p>
-            </footer>
+            <Footer/>
         </>
     )
 }
 
-export default Links
+export default About
