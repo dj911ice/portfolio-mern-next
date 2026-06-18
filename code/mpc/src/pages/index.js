@@ -15,10 +15,10 @@ export default function Home() {
         } else if (resumeValue === 1) {
             return (
                 <>
-                    <a href={"/resume/JPD1PageResume_013125ATS.pdf"} target={"_blank"}>
+                    <a href={"/resume/JPD1PageResume_061826ATS.pdf"} target={"_blank"}>
                         <button id={"pdf"}>Resume PDF</button>
                     </a> &nbsp;
-                    <a href={"/resume/JPD1PageResume_013125ATS.docx"}>
+                    <a href={"/resume/JPD1PageResume_061826ATS.docx"}>
                         <button id={"docx"}>Resume DOCX</button>
                     </a>
                 </>

@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <p>&copy; 2023-2025 Justin P. Dickerson. All rights reserved.</p>
+                <p>&copy; 2023-2026 Justin P. Dickerson. All rights reserved.</p>
             </footer>
         </>
     )

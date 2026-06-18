@@ -6,7 +6,7 @@ export const credentialsStatic = [
         credentialLink: null,
         credentialCertifier: "Oregon State University",
         institutionalLink: null,
-        credentialCompleted: false,
+        credentialCompleted: true,
         credentialVisibility: true
     },
     {
@@ -17,7 +17,7 @@ export const credentialsStatic = [
         credentialCertifier: "Grand Circus",
         institutionalLink: null,
         credentialCompleted: true,
-        credentialVisibility: true
+        credentialVisibility: false
     },
     {
         credentialType: "Certificate",
@@ -27,6 +27,27 @@ export const credentialsStatic = [
         credentialCertifier: "CareerFoundry",
         institutionalLink: null,
         credentialCompleted: true,
+        credentialVisibility: false
+    },
+    {
+        credentialType: "Degree",
+        credentialLevel: "Master of Arts",
+        credentialField: "Economics",
+        credentialLink: null,
+        credentialCertifier: "Eastern Michigan University",
+        institutionalLink: null,
+        credentialCompleted: true,
         credentialVisibility: true
-    }
+    },
+    {
+        credentialType: "Degree",
+        credentialLevel: "Bachelor of Science",
+        credentialField: "Pharmaceutical Sciences",
+        credentialLink: null,
+        credentialCertifier: "University of Toledo",
+        institutionalLink: null,
+        credentialCompleted: true,
+        credentialVisibility: true
+    },
+
 ]

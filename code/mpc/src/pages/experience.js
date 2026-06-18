@@ -15,10 +15,11 @@ function Experience(){
                         <li>Android Engineer as an Independent Consultant</li>
                         <li>Former Android Developer at a Fortune 500 Company</li>
                     </ul>
-                    <p>Undergraduate Learning Assistant (Oregon State University)</p>
+                    <p>Teaching Assistant (Oregon State University)</p>
                     <ul>
                         <li>CS 340: Introduction to Databases</li>
-                        <li>CS 362: Software Engineering 2 (Software Testing)</li>
+                        <li>CS 362: Software Engineering 2 (Software Testing & Verification)</li>
+                        <li>CS 261: Data Structures</li>
                     </ul>
                     <p>Volunteer</p>
                     <ul>
