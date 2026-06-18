@@ -16,13 +16,13 @@ function Credentials({}) {
     const [credentials, setCredentials] = useState([]);
 
     const retrieveCredentials = async () => {
-        const response = await fetch('/api/credentials');
-        if (!response.ok) {
+        // const response = await fetch('/api/credentials');
+        // if (!response.ok) {
             setCredentials(credentialsStatic);
-        } else {
-            const credentials = await response.json();
-            setCredentials(credentials);
-        }
+        // } else {
+        //     const credentials = await response.json();
+        //     setCredentials(credentials);
+        // }
     }
 
 
