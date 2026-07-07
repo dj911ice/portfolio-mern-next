@@ -3,7 +3,7 @@ export const credentialsStatic = [
         credentialType: "Degree",
         credentialLevel: "Bachelor of Science",
         credentialField: "Computer Science",
-        credentialLink: null,
+        credentialLink: "/documents/9267868_eDiploma.pdf",
         credentialCertifier: "Oregon State University",
         institutionalLink: null,
         credentialCompleted: true,
