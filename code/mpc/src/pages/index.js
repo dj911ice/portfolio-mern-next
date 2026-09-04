@@ -28,11 +28,11 @@ export default function Home() {
         } else if (resumeValue === 2) {
             return (
                 <>
-                    <a href={"/resume/JPDResume_090423.pdf"} target={"_blank"}>
-                        <button id={"pdf"}>Short Resume PDF</button>
+                    <a href={"/resume/JPD1PageResumeDSE_090426.pdf"} target={"_blank"}>
+                        <button id={"pdf"}>Resume PDF</button>
                     </a> &nbsp;
-                    <a href={"/resume/JPDResume_090423.docx"}>
-                        <button id={"docx"}>Short Resume DOCX</button>
+                    <a href={"/resume/JPD1PageResumeDSE_090426.docx"}>
+                        <button id={"docx"}>Resume DOCX</button>
                     </a>
                 </>
 
@@ -84,8 +84,8 @@ export default function Home() {
                                         setResumeValue(parseInt(e.target.value))
                                     }}>
                                 <option disabled={false} value={0}>Select to Download</option>
-                                <option value={1}>Resume</option>
-                                {/*<option value={2}>Short Resume</option>*/}
+                                <option value={1}>Software Engineering</option>
+                                <option value={2}>Data Science</option>
                                 {/*<option value={3}>Credential Summary</option>*/}
                             </select>
                         </form>
